@@ -1,0 +1,11 @@
+<routes>
+  <!-- Ônibus: 090 vermelho, 091 azul, 050 verde -->
+  <vType id="bus090" vClass="bus" length="12" personCapacity="40" color="1,0,0"/>
+  <vType id="bus091" vClass="bus" length="12" personCapacity="40" color="0,0,1"/>
+  <vType id="bus050" vClass="bus" length="12" personCapacity="40" color="0,0.7,0"/>
+
+  <!-- Passageiros: mesma cor da linha, em tom mais escuro -->
+  <vType id="pass090" vClass="pedestrian" color="0.55,0,0"/>
+  <vType id="pass091" vClass="pedestrian" color="0,0,0.55"/>
+  <vType id="pass050" vClass="pedestrian" color="0,0.4,0"/>
+</routes>

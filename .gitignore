@@ -221,3 +221,6 @@ __marimo__/
 
 # Logs dos Resultados
 results/*.log
+
+# Pasta de Testes
+tests
