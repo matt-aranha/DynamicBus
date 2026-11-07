@@ -126,4 +126,7 @@
 
     <!-- Terminal Maracaju - Via de 138.78m -->
     <busStop id="term_maracaju" name="Terminal Maracaju" lane="1108602043#0_0" startPos="15.00" endPos="95.00" friendlyPos="true"/>
+
+    <!-- Terminal Zona Oeste - Via de 132.51m -->
+    <busStop id="term_zona_oeste" name="Terminal Zona Oeste" lane="292331045#5_0" startPos="15.00" endPos="95.00" friendlyPos="true"/>
 </additional>
