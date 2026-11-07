@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<additional>
+    <!-- Terminal Campus (UFS) - posição definida manualmente -->
+    <busStop id="term_campus" name="Terminal Campus UFS" lane="97047810#3_0" startPos="20.00" endPos="100.00" friendlyPos="true"/>
+
+    <!-- Terminal D.I.A. - posição definida manualmente -->
+    <busStop id="term_dia" name="Terminal DIA" lane="291852594#1_0" startPos="20.00" endPos="100.00" friendlyPos="true"/>
+
+    <!-- Terminal Maracaju - posição definida manualmente -->
+    <busStop id="term_maracaju" name="Terminal Maracaju" lane="1108602043#0_0" startPos="15.00" endPos="95.00" friendlyPos="true"/>
+
+    <!-- Terminal Zona Oeste (Leonel Brizola) - PROVISÓRIO: não estava no arquivo enviado.
+         Colocado na plataforma de 142 m do conjunto de vias "busway" em lat -10.9164, lon -37.0880.
+         Confirme no netedit e, se necessário, troque a lane/posições. -->
+    <busStop id="term_zona_oeste" name="Terminal Zona Oeste" lane="293254288#2_0" startPos="20.00" endPos="100.00" friendlyPos="true"/>
+</additional>

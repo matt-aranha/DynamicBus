@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<additional>
+    <!-- Terminais (posições definidas manualmente) -->
+    <busStop id="term_campus" name="Terminal Campus UFS" lane="97047810#3_0" startPos="20.00" endPos="100.00" friendlyPos="true" lines="050 090 091" color="0,0,0"/>
+    <busStop id="term_dia" name="Terminal DIA" lane="291852594#1_0" startPos="20.00" endPos="100.00" friendlyPos="true" lines="090 091" color="0,0,0"/>
+    <busStop id="term_maracaju" name="Terminal Maracaju" lane="1108602043#0_0" startPos="15.00" endPos="95.00" friendlyPos="true" lines="050" color="0,0,0"/>
+    <busStop id="term_zona_oeste" name="Terminal Zona Oeste" lane="293254288#2_0" startPos="20.00" endPos="100.00" friendlyPos="true" lines="050 090" color="0,0,0"/>
+    <!-- Paradas intermediárias geradas por tools/gerar_cenario.py -->
+    <busStop id="bs_090i_02" name="Av. Gov. Marcelo Deda Chagas 731" lane="97047810#6_0" startPos="402.50" endPos="417.50" friendlyPos="true" lines="050 090" color="0.5,0.5,0.5"/>
+    <busStop id="bs_090i_03" name="Av. Mal. Cândido Rondon 1515 | Progresso" lane="97047810#9_0" startPos="266.50" endPos="281.50" friendlyPos="true" lines="050 090" color="0.5,0.5,0.5"/>
+    <busStop id="bs_090i_04" name="Av. Mal. Cândido Rondon 890" lane="164258582#2_0" startPos="106.50" endPos="121.50" friendlyPos="true" lines="050 090" color="0.5,0.5,0.5"/>
+    <busStop id="bs_090i_05" name="Av. Prof. José Bonifácio Forte Neto | Hemocentro De Sergipe" lane="82754201#1_0" startPos="13.07" endPos="28.07" friendlyPos="true" lines="050 090" color="0.5,0.5,0.5"/>
+    <busStop id="bs_090i_08" name="Av. Pres. Tancredo Neves 5550" lane="137146993#0_0" startPos="10.50" endPos="25.50" friendlyPos="true" lines="090" color="1,0,0"/>
+    <busStop id="bs_090i_09" name="Av. Pres. Tancredo Neves, 5655" lane="81096921#2_0" startPos="50.50" endPos="65.50" friendlyPos="true" lines="090" color="1,0,0"/>
+    <busStop id="bs_090i_10" name="Av. Pres. Tancredo Neves, 6055" lane="81096921#9_0" startPos="74.50" endPos="89.50" friendlyPos="true" lines="090" color="1,0,0"/>
+    <busStop id="bs_090i_11" name="Av. Pres. Tancredo Neves, 4911" lane="749088707#1_0" startPos="50.50" endPos="65.50" friendlyPos="true" lines="090" color="1,0,0"/>
+    <busStop id="bs_090i_12" name="Av. Pres. Tancredo Neves, 8215" lane="749088707#7_0" startPos="2.50" endPos="17.50" friendlyPos="true" lines="090" color="1,0,0"/>
+    <busStop id="bs_090i_13" name="Av. Pres. Tancredo Neves 3803" lane="749088707#12_0" startPos="26.50" endPos="41.50" friendlyPos="true" lines="090" color="1,0,0"/>
+    <busStop id="bs_090i_14" name="Av. Pres. Tancredo Neves 3231" lane="749088707#16_0" startPos="2.50" endPos="17.50" friendlyPos="true" lines="090" color="1,0,0"/>
+    <busStop id="bs_090i_15" name="Av. Pres. Tancredo Neves | Ferreira Costa" lane="81178606#3_0" startPos="66.50" endPos="81.50" friendlyPos="true" lines="090 091" color="0.5,0.5,0.5"/>
+    <busStop id="bs_090v_02" name="Av. Pres. Tancredo Neves | Praça Anival Dantas" lane="89717740#0_0" startPos="18.50" endPos="33.50" friendlyPos="true" lines="090 091" color="0.5,0.5,0.5"/>
+    <busStop id="bs_090v_03" name="Av. Pres. Tancredo Neves, 3420" lane="163971740_0" startPos="170.50" endPos="185.50" friendlyPos="true" lines="090" color="1,0,0"/>
+    <busStop id="bs_090v_04" name="Av. Pres. Tancredo Neves, 3801" lane="292330043#6_0" startPos="42.50" endPos="57.50" friendlyPos="true" lines="090" color="1,0,0"/>
+    <busStop id="bs_090v_05" name="Av. Pres. Tancredo Neves, 3960" lane="292330043#13_0" startPos="202.50" endPos="217.50" friendlyPos="true" lines="090" color="1,0,0"/>
+    <busStop id="bs_090v_06" name="Av. Pres. Tancredo Neves, 5033" lane="1364375578#4_0" startPos="106.50" endPos="121.50" friendlyPos="true" lines="090" color="1,0,0"/>
+    <busStop id="bs_090v_07" name="Av. Pres. Tancredo Neves, 6056" lane="1126989037_0" startPos="298.50" endPos="313.50" friendlyPos="true" lines="090" color="1,0,0"/>
+    <busStop id="bs_090v_08" name="Av. Pres. Tancredo Neves, 5660" lane="847324875#1_0" startPos="210.50" endPos="225.50" friendlyPos="true" lines="090" color="1,0,0"/>
+    <busStop id="bs_090v_09" name="Av. Pres. Tancredo Neves 2012" lane="415380480#5_0" startPos="10.50" endPos="25.50" friendlyPos="true" lines="090" color="1,0,0"/>
+    <busStop id="bs_090v_10" name="Av. Pres. Tancredo Neves 2595" lane="339827928_0" startPos="2.50" endPos="17.50" friendlyPos="true" lines="090" color="1,0,0"/>
+    <busStop id="bs_090v_11" name="Av. Pres. Tancredo Neves, 2880" lane="81096931#7_0" startPos="66.50" endPos="81.50" friendlyPos="true" lines="090" color="1,0,0"/>
+    <busStop id="bs_090v_13" name="Av. Mal. Cândido Rondon 901" lane="101375227#0_0" startPos="18.50" endPos="33.50" friendlyPos="true" lines="050 090" color="0.5,0.5,0.5"/>
+    <busStop id="bs_090v_14" name="Av. Mal. Cândido Rondon 870" lane="101375227#1_0" startPos="2.50" endPos="17.50" friendlyPos="true" lines="050 090" color="0.5,0.5,0.5"/>
+    <busStop id="bs_090v_15" name="Av. Mal. Cândido Rondon 1346" lane="101375227#2_0" startPos="114.50" endPos="129.50" friendlyPos="true" lines="050 090" color="0.5,0.5,0.5"/>
+    <busStop id="bs_090v_16" name="Av. Gov. Marcelo Deda Chagas 730" lane="385870741#1_0" startPos="98.50" endPos="113.50" friendlyPos="true" lines="050 090" color="0.5,0.5,0.5"/>
+    <busStop id="bs_050i_08" name="Av. Pres. Tancredo Neves 4210" lane="278275397_0" startPos="50.50" endPos="65.50" friendlyPos="true" lines="050" color="0,0.7,0"/>
+    <busStop id="bs_050i_09" name="Av. Pres. Tancredo Neves 2717" lane="95972779#1_0" startPos="50.50" endPos="65.50" friendlyPos="true" lines="050" color="0,0.7,0"/>
+    <busStop id="bs_050i_10" name="Av. Alcides Fontes 110" lane="428375790#1_0" startPos="18.50" endPos="33.50" friendlyPos="true" lines="050" color="0,0.7,0"/>
+    <busStop id="bs_050i_11" name="Av. Gen. Euclides Figueiredo 243" lane="-313114486#1_0" startPos="130.50" endPos="145.50" friendlyPos="true" lines="050" color="0,0.7,0"/>
+    <busStop id="bs_050i_12" name="Av. Gen. Euclides Figueiredo 584" lane="-313114486#0_0" startPos="306.50" endPos="321.50" friendlyPos="true" lines="050" color="0,0.7,0"/>
+    <busStop id="bs_050i_13" name="Av. Gen. Euclides Figueiredo 908" lane="-428111069#2_0" startPos="42.50" endPos="57.50" friendlyPos="true" lines="050" color="0,0.7,0"/>
+    <busStop id="bs_050i_14" name="Rua Serafim Bonfim 237" lane="101187621#0_0" startPos="18.50" endPos="33.50" friendlyPos="true" lines="050" color="0,0.7,0"/>
+    <busStop id="bs_050i_15" name="Rua Serafim Bonfim 71" lane="101187621#0_0" startPos="50.50" endPos="65.50" friendlyPos="true" lines="050" color="0,0.7,0"/>
+    <busStop id="bs_050i_16" name="Rua Gen. Prado 152" lane="-150933166#0_0" startPos="66.50" endPos="81.50" friendlyPos="true" lines="050" color="0,0.7,0"/>
+    <busStop id="bs_050i_18" name="Av. Visconde De Maracaju 781" lane="605955504#1_0" startPos="10.50" endPos="25.50" friendlyPos="true" lines="050" color="0,0.7,0"/>
+    <busStop id="bs_050i_19" name="Av. Visconde De Maracaju 521" lane="605955504#3_0" startPos="2.50" endPos="17.50" friendlyPos="true" lines="050" color="0,0.7,0"/>
+    <busStop id="bs_050i_20" name="Av. Visconde De Maracaju 365" lane="605955504#3_0" startPos="34.50" endPos="49.50" friendlyPos="true" lines="050" color="0,0.7,0"/>
+    <busStop id="bs_050i_21" name="Av. Visconde De Maracaju 113" lane="605955504#4_0" startPos="2.50" endPos="17.50" friendlyPos="true" lines="050" color="0,0.7,0"/>
+    <busStop id="bs_050i_22" name="Av. Visconde De Maracaju | Paróquia Pio X" lane="605955504#4_0" startPos="34.50" endPos="49.50" friendlyPos="true" lines="050" color="0,0.7,0"/>
+    <busStop id="bs_050i_23" name="Av. Visconde De Maracaju 147" lane="605955504#10_0" startPos="2.50" endPos="17.50" friendlyPos="true" lines="050" color="0,0.7,0"/>
+    <busStop id="bs_050i_24" name="Av. Visconde De Maracaju 72" lane="605955504#12_0" startPos="2.50" endPos="17.50" friendlyPos="true" lines="050" color="0,0.7,0"/>
+    <busStop id="bs_050i_25" name="Rua Do Carmo 147" lane="216463968#0_0" startPos="34.50" endPos="49.50" friendlyPos="true" lines="050" color="0,0.7,0"/>
+    <busStop id="bs_050i_26" name="Rua Santa Maria, 2-92" lane="-81931236_0" startPos="26.50" endPos="41.50" friendlyPos="true" lines="050" color="0,0.7,0"/>
+    <busStop id="bs_050i_27" name="Rua Cláudio Batista, 169" lane="352179032#0_0" startPos="58.50" endPos="73.50" friendlyPos="true" lines="050" color="0,0.7,0"/>
+    <busStop id="bs_050i_28" name="Rua Cláudio Batista, 334" lane="352179032#2_0" startPos="26.50" endPos="41.50" friendlyPos="true" lines="050" color="0,0.7,0"/>
+    <busStop id="bs_050i_29" name="Rua Cláudio Batista 454" lane="352179032#4_0" startPos="0.00" endPos="14.44" friendlyPos="true" lines="050" color="0,0.7,0"/>
+    <busStop id="bs_050v_02" name="Rua Santa Terezinha | E.E Clodoaldo De Alencar" lane="-352179031#0_0" startPos="26.50" endPos="41.50" friendlyPos="true" lines="050" color="0,0.7,0"/>
+    <busStop id="bs_050v_03" name="Av. Sanatório 39" lane="162014981#0_0" startPos="106.50" endPos="121.50" friendlyPos="true" lines="050" color="0,0.7,0"/>
+    <busStop id="bs_050v_04" name="Rua Artur Fortes 80" lane="162014984#2_0" startPos="66.50" endPos="81.50" friendlyPos="true" lines="050" color="0,0.7,0"/>
+    <busStop id="bs_050v_05" name="Av. Visconde De Maracaju 388" lane="603552738#2_0" startPos="18.50" endPos="33.50" friendlyPos="true" lines="050" color="0,0.7,0"/>
+    <busStop id="bs_050v_06" name="Av. Visconde De Maracaju 604" lane="375814899#0_0" startPos="178.50" endPos="193.50" friendlyPos="true" lines="050" color="0,0.7,0"/>
+    <busStop id="bs_050v_07" name="Av. Visconde De Maracaju 850" lane="375814899#13_0" startPos="90.50" endPos="105.50" friendlyPos="true" lines="050" color="0,0.7,0"/>
+    <busStop id="bs_050v_09" name="Rua São Francisco De Assis 1149" lane="1457820450_0" startPos="42.50" endPos="57.50" friendlyPos="true" lines="050" color="0,0.7,0"/>
+    <busStop id="bs_050v_10" name="Rua São Francisco De Assis 755" lane="514317394#3_0" startPos="58.50" endPos="73.50" friendlyPos="true" lines="050" color="0,0.7,0"/>
+    <busStop id="bs_050v_11" name="Rua São Francisco De Assis 535" lane="1364637523#1_0" startPos="26.50" endPos="41.50" friendlyPos="true" lines="050" color="0,0.7,0"/>
+    <busStop id="bs_050v_12" name="Av. Gen. Euclides Figueiredo 905" lane="150933166#2_0" startPos="2.50" endPos="17.50" friendlyPos="true" lines="050" color="0,0.7,0"/>
+    <busStop id="bs_050v_13" name="Av. Gen. Euclides Figueiredo 457" lane="428111069#2_0" startPos="58.50" endPos="73.50" friendlyPos="true" lines="050" color="0,0.7,0"/>
+    <busStop id="bs_050v_14" name="Av. Gen. Euclides Figueiredo 275" lane="81729348#1_0" startPos="234.50" endPos="249.50" friendlyPos="true" lines="050" color="0,0.7,0"/>
+    <busStop id="bs_050v_15" name="Av. Alcides Fontes 218" lane="81737158#6_0" startPos="2.50" endPos="17.50" friendlyPos="true" lines="050" color="0,0.7,0"/>
+    <busStop id="bs_050v_16" name="Av. Pres. Tancredo Neves 2728" lane="82753207#3_0" startPos="2.50" endPos="17.50" friendlyPos="true" lines="050" color="0,0.7,0"/>
+    <busStop id="bs_050v_17" name="Av. Pres. Tancredo Neves 4201" lane="82753207#4_0" startPos="82.50" endPos="97.50" friendlyPos="true" lines="050" color="0,0.7,0"/>
+    <busStop id="bs_091i_02" name="Av. Gov. Marcelo Deda Chagas 208" lane="97047810#4_0" startPos="2.50" endPos="17.50" friendlyPos="true" lines="091" color="0,0,1"/>
+    <busStop id="bs_091i_03" name="Av. João Bebe Água, 736" lane="97047810#4_0" startPos="34.50" endPos="49.50" friendlyPos="true" lines="091" color="0,0,1"/>
+    <busStop id="bs_091i_04" name="Av. João Bebe Água 964" lane="97047810#4_0" startPos="66.50" endPos="81.50" friendlyPos="true" lines="091" color="0,0,1"/>
+    <busStop id="bs_091i_05" name="Av. João Bebe Água ,1100" lane="97047810#4_0" startPos="98.50" endPos="113.50" friendlyPos="true" lines="091" color="0,0,1"/>
+    <busStop id="bs_091i_06" name="Av. João Bebe Água 1808" lane="97047810#4_0" startPos="130.50" endPos="145.50" friendlyPos="true" lines="091" color="0,0,1"/>
+    <busStop id="bs_091i_07" name="Av. João Bebe Água 1881" lane="97047810#4_0" startPos="162.50" endPos="177.50" friendlyPos="true" lines="091" color="0,0,1"/>
+    <busStop id="bs_091i_08" name="Av. João Bebe Água, 1101" lane="97047810#4_0" startPos="194.50" endPos="209.50" friendlyPos="true" lines="091" color="0,0,1"/>
+    <busStop id="bs_091i_09" name="Av. João Bebe Água 985" lane="97047810#4_0" startPos="226.50" endPos="241.50" friendlyPos="true" lines="091" color="0,0,1"/>
+    <busStop id="bs_091i_10" name="Rua I 102" lane="760444349#3_0" startPos="2.50" endPos="17.50" friendlyPos="true" lines="091" color="0,0,1"/>
+    <busStop id="bs_091i_11" name="Rua Joaquim De Barros 223a" lane="170003897_0" startPos="106.50" endPos="121.50" friendlyPos="true" lines="091" color="0,0,1"/>
+    <busStop id="bs_091i_12" name="Rua Saneamento 94" lane="170003785#0_0" startPos="154.50" endPos="169.50" friendlyPos="true" lines="091" color="0,0,1"/>
+    <busStop id="bs_091i_13" name="Rua J 7" lane="957885457#7_0" startPos="122.50" endPos="137.50" friendlyPos="true" lines="091" color="0,0,1"/>
+    <busStop id="bs_091i_14" name="Rua Jasiel De Brito Côrtes 847" lane="170010815#2_0" startPos="50.50" endPos="65.50" friendlyPos="true" lines="091" color="0,0,1"/>
+    <busStop id="bs_091i_15" name="Rua Jasiel De Brito Côrtes 715" lane="84262649#0_0" startPos="2.50" endPos="17.50" friendlyPos="true" lines="091" color="0,0,1"/>
+    <busStop id="bs_091i_16" name="Rua Jasiel De Brito Côrtes, 80" lane="84262649#3_0" startPos="106.50" endPos="121.50" friendlyPos="true" lines="091" color="0,0,1"/>
+    <busStop id="bs_091i_17" name="Rua Jasiel De Brito Côrtes, 450" lane="84262649#6_0" startPos="186.50" endPos="201.50" friendlyPos="true" lines="091" color="0,0,1"/>
+    <busStop id="bs_091i_18" name="Rua Pedro Brito Dos Santos | Res. Vila Velha" lane="84262669#2_0" startPos="66.50" endPos="81.50" friendlyPos="true" lines="091" color="0,0,1"/>
+    <busStop id="bs_091i_19" name="Rua Pedro Brito Dos Santos | Bela Vista Residencial" lane="84262673#1_0" startPos="2.50" endPos="17.50" friendlyPos="true" lines="091" color="0,0,1"/>
+    <busStop id="bs_091i_20" name="Rua Projetada 16" lane="170004748#2_0" startPos="2.50" endPos="17.50" friendlyPos="true" lines="091" color="0,0,1"/>
+    <busStop id="bs_091i_21" name="Av. Escritor Graciliano Ramos 746" lane="170004748#2_0" startPos="34.50" endPos="49.50" friendlyPos="true" lines="091" color="0,0,1"/>
+    <busStop id="bs_091i_22" name="Av. Cel. Sizinio Da Rocha 103" lane="513177970#0_0" startPos="2.50" endPos="17.50" friendlyPos="true" lines="091" color="0,0,1"/>
+    <busStop id="bs_091i_23" name="Rua Hildete Falcão Batista 37" lane="513177970#0_0" startPos="34.50" endPos="49.50" friendlyPos="true" lines="091" color="0,0,1"/>
+    <busStop id="bs_091i_24" name="Av. Farmacêutica Cezartina Régis , 793" lane="667601235#1_0" startPos="106.50" endPos="121.50" friendlyPos="true" lines="091" color="0,0,1"/>
+    <busStop id="bs_091i_25" name="Av. Farmacêutica Cezartina Régis 357" lane="667601234#0_0" startPos="58.50" endPos="73.50" friendlyPos="true" lines="091" color="0,0,1"/>
+    <busStop id="bs_091i_26" name="Rua Moizete Leite Mendonça" lane="80612658_0" startPos="42.50" endPos="57.50" friendlyPos="true" lines="091" color="0,0,1"/>
+    <busStop id="bs_091v_03" name="Rua Major João Téles, 88" lane="133437567#3_0" startPos="2.50" endPos="17.50" friendlyPos="true" lines="091" color="0,0,1"/>
+    <busStop id="bs_091v_04" name="Av. Farmacêutica Cezartina Régis 438" lane="81178625#3_0" startPos="50.50" endPos="65.50" friendlyPos="true" lines="091" color="0,0,1"/>
+    <busStop id="bs_091v_05" name="Av. Farmacêutica Cezartina Régis 686" lane="81178625#10_0" startPos="74.50" endPos="89.50" friendlyPos="true" lines="091" color="0,0,1"/>
+    <busStop id="bs_091v_06" name="Av. Rio Poxim 11" lane="170006300_0" startPos="10.50" endPos="25.50" friendlyPos="true" lines="091" color="0,0,1"/>
+    <busStop id="bs_091v_07" name="Estrada Do Jabotiana, 605" lane="170006306_0" startPos="146.50" endPos="161.50" friendlyPos="true" lines="091" color="0,0,1"/>
+    <busStop id="bs_091v_08" name="Rua Jasiel De Brito Côrtes, 540" lane="-84262649#6_0" startPos="66.50" endPos="81.50" friendlyPos="true" lines="091" color="0,0,1"/>
+    <busStop id="bs_091v_09" name="Rua Jasiel De Brito Côrtes, 79" lane="-84262649#3_0" startPos="2.50" endPos="17.50" friendlyPos="true" lines="091" color="0,0,1"/>
+    <busStop id="bs_091v_10" name="Rua Jasiel De Brito Côrtes 655" lane="-84262649#0_0" startPos="66.50" endPos="81.50" friendlyPos="true" lines="091" color="0,0,1"/>
+    <busStop id="bs_091v_11" name="Rua Jasiel De Brito Côrtes 847" lane="-170010815#2_0" startPos="26.50" endPos="41.50" friendlyPos="true" lines="091" color="0,0,1"/>
+    <busStop id="bs_091v_12" name="Rua J 8" lane="-957885457#8_0" startPos="98.50" endPos="113.50" friendlyPos="true" lines="091" color="0,0,1"/>
+    <busStop id="bs_091v_13" name="Rua Saneamento 439" lane="-957885457#5_0" startPos="2.50" endPos="17.50" friendlyPos="true" lines="091" color="0,0,1"/>
+    <busStop id="bs_091v_14" name="Rua Saneamento 114" lane="-170003785#0_0" startPos="2.50" endPos="17.50" friendlyPos="true" lines="091" color="0,0,1"/>
+    <busStop id="bs_091v_15" name="Rua I 59" lane="-227364200#1_0" startPos="98.50" endPos="113.50" friendlyPos="true" lines="091" color="0,0,1"/>
+    <busStop id="bs_091v_16" name="Av. João Bebe Água 577" lane="97047810#1_0" startPos="122.50" endPos="137.50" friendlyPos="true" lines="091" color="0,0,1"/>
+    <busStop id="bs_091v_17" name="Av. Gov. Marcelo Deda Chagas 195" lane="97047810#1_0" startPos="386.50" endPos="401.50" friendlyPos="true" lines="091" color="0,0,1"/>
+</additional>
