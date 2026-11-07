@@ -1,0 +1,60 @@
+{
+  "_leia-me": "Chave = nome da rua do itinerário já normalizado (minúsculas, sem acento, sem 'de/da/do'). 'osm' = nomes exatos no OSM. 'arestas' = ids de aresta indicados manualmente (um id sem '#' vale para todas as partes #k; com '#' vale só para ele; o sinal '-' é respeitado). 'ponto_unico': true = todas as paradas dessa rua na rota viram uma só parada, no meio da aresta.",
+  "avenida marechal candido rondon": {
+    "osm": [
+      "Avenida Marechal Cândido Mariano da Silva Rondon"
+    ]
+  },
+  "avenida joao bebe agua": {
+    "arestas": [
+      "97047810",
+      "96505250"
+    ]
+  },
+  "avenida professor jose bonifacio forte neto": {
+    "arestas": [
+      "82754201#1"
+    ],
+    "ponto_unico": true
+  },
+  "rua carmo": {
+    "arestas": [
+      "216463968"
+    ]
+  },
+  "rua santa maria": {
+    "arestas": [
+      "-81931236"
+    ]
+  },
+  "rua claudio batista": {
+    "arestas": [
+      "352179032"
+    ]
+  },
+  "rua santa terezinha": {
+    "arestas": [
+      "-352179031#0"
+    ]
+  },
+  "avenida sanatorio": {
+    "arestas": [
+      "162014981#0"
+    ]
+  },
+  "rua joaquim barros": {
+    "arestas": [
+      "170003897"
+    ]
+  },
+  "rua projetada": {
+    "arestas": [
+      "170004748#2"
+    ]
+  },
+  "rua serafim bonfim": {
+    "arestas": [
+      "101187621"
+    ]
+  }
+}

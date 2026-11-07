@@ -1,0 +1,14 @@
+<configuration>
+    <input>
+        <net-file value="net/net_linhas_090_091_050.net.xml"/>
+        <additional-files value="additional/busstops_linhas.add.xml"/>
+        <route-files value="routes/vtypes.rou.xml,routes/bus_routes.rou.xml,routes/teste_visual.rou.xml"/>
+    </input>
+    <time>
+        <begin value="0"/>
+        <end value="7200"/>
+    </time>
+    <processing>
+        <time-to-teleport value="-1"/>
+    </processing>
+</configuration>

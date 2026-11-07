@@ -1,0 +1,9 @@
+<routes>
+    <!-- Um ônibus por rota, saindo com 30 s de diferença. Só para conferir os trajetos no sumo-gui. -->
+    <vehicle id="v090_ida"   type="bus090" route="r090_ida"   depart="0"/>
+    <vehicle id="v090_volta" type="bus090" route="r090_volta" depart="30"/>
+    <vehicle id="v091_ida"   type="bus091" route="r091_ida"   depart="60"/>
+    <vehicle id="v091_volta" type="bus091" route="r091_volta" depart="90"/>
+    <vehicle id="v050_ida"   type="bus050" route="r050_ida"   depart="120"/>
+    <vehicle id="v050_volta" type="bus050" route="r050_volta" depart="150"/>
+</routes>
