@@ -115,10 +115,8 @@
         <access lane="426003103#0_0" pos="0.00" length="113.44" friendlyPos="1"/>
         <access lane="777760323_0" pos="19.77" length="91.83" friendlyPos="1"/>
     </busStop>
-</additional>
 
-<additional>
-    <!-- Terminal Campus (UFS) - Via de 149.72m -->
+        <!-- Terminal Campus (UFS) - Via de 149.72m -->
     <busStop id="term_campus" name="Terminal Campus UFS" lane="97047810#3_0" startPos="20.00" endPos="100.00" friendlyPos="true"/>
 
     <!-- Terminal D.I.A. - Via de 146.85m -->
