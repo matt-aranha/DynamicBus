@@ -40,6 +40,10 @@ import xml.etree.ElementTree as ET
 from collections import defaultdict, OrderedDict
 from xml.sax.saxutils import quoteattr
 
+try:
+    import pyproj  # noqa: F401  (o sumolib precisa dele para converter lat/lon <-> x/y)
+except ImportError:
+    sys.exit("Falta o pacote 'pyproj'. Rode:  pip install pyproj   e execute o script novamente.")
 import sumolib
 from sumolib.geomhelper import polygonOffsetAndDistanceToPoint, positionAtShapeOffset
 
@@ -223,16 +227,96 @@ class Rede:
                         heapq.heappush(heap, (nd, p.getID()))
         return dist
 
-    def rota_por_pontos(self, pontos, permitidas, fator_fora):
-        total = []
-        custo = 0.0
-        for a, b in zip(pontos[:-1], pontos[1:]):
-            seg, c = self.dijkstra(a, b, permitidas, fator_fora)
-            if seg is None:
-                return None, (a, b)
-            custo += c
-            total.extend(seg if not total else seg[1:])
+    def completar_cadeia(self, cadeia, rid=""):
+        """Sequência exata de arestas informada à mão; se duas consecutivas não se ligam diretamente, completa pelo menor caminho."""
+        net = self.net
+        try:
+            cheia = [net.getEdge(cadeia[0])]
+            for nxt in cadeia[1:]:
+                cur, ne = cheia[-1], net.getEdge(nxt)
+                if ne in cur.getOutgoing() and self.permite(cur, ne):
+                    cheia.append(ne)
+                    continue
+                seg, _ = self.dijkstra(cur.getID(), nxt, set(), 1.0)
+                if seg is None:
+                    print(f"  ERRO: {rid}: sem ligação entre {cur.getID()} e {nxt} no trecho fixo")
+                    return None
+                print(f"  AVISO: {rid}: entre {cur.getID()} e {nxt} não há ligação direta; completei com {[e.getID() for e in seg[1:-1]]}")
+                cheia.extend(seg[1:])
+            return cheia
+        except KeyError as ex:
+            print(f"  ERRO: {rid}: aresta {ex} do trecho fixo não existe na rede")
+            return None
+
+    def rota_por_pontos(self, pontos, permitidas, fator_fora, rid=""):
+        """pontos: ids de aresta (str) ou sequências fixas (list). Devolve (arestas, custo) ou (None, (a, b))."""
+        net = self.net
+        total, custo, atual = [], 0.0, None
+
+        def anexar(seg):
+            if total and seg and total[-1].getID() == seg[0].getID():
+                total.extend(seg[1:])
+            else:
+                total.extend(seg)
+        for item in pontos:
+            if isinstance(item, str):
+                if atual is None:
+                    total.append(net.getEdge(item))
+                else:
+                    seg, c = self.dijkstra(atual, item, permitidas, fator_fora)
+                    if seg is None:
+                        return None, (atual, item)
+                    custo += c
+                    anexar(seg)
+                atual = item
+            else:
+                cadeia = self.completar_cadeia(item, rid)
+                if cadeia is None:
+                    return None, (item[0], item[-1])
+                if atual is None:
+                    total.extend(cadeia)
+                else:
+                    seg, c = self.dijkstra(atual, cadeia[0].getID(), permitidas, fator_fora)
+                    if seg is None:
+                        return None, (atual, cadeia[0].getID())
+                    custo += c
+                    anexar(seg)
+                    total.extend(cadeia[1:])
+                atual = cadeia[-1].getID()
         return total, custo
+
+
+def inserir_trechos_fixos(rede, pontos, trechos, permitidas, fator_fora, rid):
+    """Coloca cada sequência fixa de arestas entre os dois pontos de passagem onde ela causa o menor desvio."""
+    ids_cadeias = {e for tr in trechos for e in tr["arestas"]}
+    pontos = [p for k, p in enumerate(pontos) if k in (0, len(pontos) - 1) or p not in ids_cadeias]
+    k_min = 0
+    for tr in trechos:
+        cadeia = tr["arestas"]
+        A, B = cadeia[0], cadeia[-1]
+        melhor, melhor_k = None, None
+        for k in range(k_min, len(pontos) - 1):
+            u = pontos[k] if isinstance(pontos[k], str) else pontos[k][-1]
+            v = pontos[k + 1] if isinstance(pontos[k + 1], str) else pontos[k + 1][0]
+            try:
+                _, d1 = rede.dijkstra(u, A, permitidas, fator_fora)
+                _, d2 = rede.dijkstra(B, v, permitidas, fator_fora)
+                _, d0 = rede.dijkstra(u, v, permitidas, fator_fora)
+            except KeyError:
+                print(f"  ERRO: {rid}: aresta do trecho fixo não existe na rede")
+                return pontos
+            if d1 == float("inf") or d2 == float("inf"):
+                continue
+            score = d1 + d2 - (d0 if d0 != float("inf") else 0.0)
+            if melhor is None or score < melhor:
+                melhor, melhor_k = score, k
+        if melhor_k is None:
+            print(f"  ERRO: {rid}: o trecho fixo {A} ... {B} não se encaixa em nenhum ponto da rota; NÃO aplicado.")
+            continue
+        pontos.insert(melhor_k + 1, cadeia)
+        k_min = melhor_k + 1
+        print(f"  trecho fixo {A} ... {B} inserido em {rid} (entre os pontos {melhor_k} e {melhor_k + 1} da rota)")
+    return pontos
 
 
 # --------------------------------------------------------------------------------------
@@ -621,6 +705,8 @@ def main():
     net = rede.net
     terminais = ler_terminais(a.terminais)
     linhas_csv = ler_csv(a.csv)
+    inativas = [r for r in linhas_csv if r.get("ativa", "sim").strip().lower() in ("nao", "não", "n", "0", "false")]
+    linhas_csv = [r for r in linhas_csv if r not in inativas]
     aliases = ler_json(a.aliases, {})
     aliases = {k: v for k, v in aliases.items() if not k.startswith("_")}
     overrides = ler_json(a.overrides, {})
@@ -708,7 +794,9 @@ def main():
         fixas = {str(k): v for k, v in ov.get("paradas_fixas", {}).items()}
         pontos, ancoras = montar_pontos(rede, rows, resolvidas, term_aresta, term0, termN, permitidas,
                                         a.fator_fora, fixas, limite_ancora=a.ancoras_max_arestas)
-        edges, custo = rede.rota_por_pontos(pontos, permitidas, a.fator_fora)
+        if ov.get("trechos_fixos"):
+            pontos = inserir_trechos_fixos(rede, pontos, ov["trechos_fixos"], permitidas, a.fator_fora, rid)
+        edges, custo = rede.rota_por_pontos(pontos, permitidas, a.fator_fora, rid)
         if edges is None:
             print(f"\nERRO: rota {rid}: sem caminho entre {custo}. Verifique os terminais/overrides.")
             continue
@@ -892,6 +980,12 @@ def main():
     for tid, t in terminais.items():
         t["linhas"] = linhas_do_terminal.get(tid, set())
 
+    for r in inativas:
+        relatorio.append({"rota": f"{r['linha']}_{r['sentido']}", "ordem": r["ordem"], "texto": r["texto_original"],
+                          "rua_osm": "", "status_rua": "", "metodo": "desativada", "busStop": "", "lane": "", "pos": "",
+                          "lat": "", "lon": "", "dist_geocode_m": "", "avisos": "nao_existe_na_rota_real"})
+    ordem_rota = {f"{l}_{sd}": k for k, (l, sd) in enumerate(ORDEM_ROTAS)}
+    relatorio.sort(key=lambda x: (ordem_rota.get(x["rota"], 99), int(x["ordem"])))
     escrever_saidas(a, terminais, paradas_xml, rotas_saida, relatorio, pois)
     saida_ruas = os.path.join(os.path.dirname(a.relatorio) or ".", "arestas_por_rua.csv")
     with open(saida_ruas, "w", encoding="utf-8-sig", newline="") as f:

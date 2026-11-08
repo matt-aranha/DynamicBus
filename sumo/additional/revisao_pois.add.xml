@@ -38,7 +38,6 @@
     <poi id="bs_050_ida_3" type="parada" color="0,0.6,0" x="4123.60" y="5075.19" layer="20"/>
     <poi id="bs_050_ida_4" type="parada" color="0,0.6,0" x="4667.83" y="5169.80" layer="20"/>
     <poi id="bs_050_ida_5" type="parada" color="0,0.6,0" x="4836.25" y="6152.91" layer="20"/>
-    <poi id="bs_050_ida_6" type="parada" color="0,0.6,0" x="4836.25" y="6152.91" layer="20"/>
     <poi id="bs_050_ida_7" type="parada" color="0,0.6,0" x="5170.08" y="5713.81" layer="20"/>
     <poi id="bs_050_ida_8" type="parada" color="0,0.6,0" x="5365.77" y="5574.22" layer="20"/>
     <poi id="bs_050_ida_9" type="parada" color="0,0.6,0" x="5441.91" y="5486.08" layer="20"/>
@@ -46,9 +45,9 @@
     <poi id="bs_050_ida_11" type="parada" color="0,0.6,0" x="5031.00" y="7464.89" layer="20"/>
     <poi id="bs_050_ida_12" type="parada" color="0,0.6,0" x="5099.58" y="7796.62" layer="20"/>
     <poi id="bs_050_ida_13" type="parada" color="0,0.6,0" x="5299.66" y="8131.19" layer="20"/>
-    <poi id="bs_050_ida_14" type="parada" color="0,0.6,0" x="5416.40" y="8308.60" layer="20"/>
-    <poi id="bs_050_ida_15" type="parada" color="0,0.6,0" x="5442.27" y="8289.77" layer="20"/>
-    <poi id="bs_050_ida_16" type="parada" color="0,0.6,0" x="5495.09" y="8898.78" layer="20"/>
+    <poi id="bs_050_ida_14" type="parada" color="0,0.6,0" x="5455.21" y="8280.35" layer="20"/>
+    <poi id="bs_050_ida_15" type="parada" color="0,0.6,0" x="5578.67" y="8196.01" layer="20"/>
+    <poi id="bs_050_ida_16" type="parada" color="0,0.6,0" x="6014.31" y="8513.29" layer="20"/>
     <poi id="bs_050_ida_17" type="parada" color="0,0.6,0" x="6114.93" y="8778.20" layer="20"/>
     <poi id="bs_050_ida_18" type="parada" color="0,0.6,0" x="6240.69" y="8735.63" layer="20"/>
     <poi id="bs_050_ida_19" type="parada" color="0,0.6,0" x="6282.44" y="8711.79" layer="20"/>
@@ -70,12 +69,12 @@
     <poi id="bs_050_volta_6" type="parada" color="0,0.6,0" x="6733.46" y="8409.08" layer="20"/>
     <poi id="bs_050_volta_7" type="parada" color="0,0.6,0" x="6334.80" y="8698.86" layer="20"/>
     <poi id="bs_050_volta_8" type="parada" color="0,0.6,0" x="6114.93" y="8778.20" layer="20"/>
-    <poi id="bs_050_volta_9" type="parada" color="0,0.6,0" x="6025.77" y="8881.23" layer="20"/>
-    <poi id="bs_050_volta_10" type="parada" color="0,0.6,0" x="5791.71" y="9023.45" layer="20"/>
-    <poi id="bs_050_volta_11" type="parada" color="0,0.6,0" x="5581.92" y="9051.00" layer="20"/>
-    <poi id="bs_050_volta_12" type="parada" color="0,0.6,0" x="5496.48" y="8761.76" layer="20"/>
-    <poi id="bs_050_volta_13" type="parada" color="0,0.6,0" x="5282.57" y="8117.83" layer="20"/>
-    <poi id="bs_050_volta_14" type="parada" color="0,0.6,0" x="5034.45" y="7583.58" layer="20"/>
+    <poi id="bs_050_volta_9" type="parada" color="0,0.6,0" x="5992.04" y="8714.30" layer="20"/>
+    <poi id="bs_050_volta_10" type="parada" color="0,0.6,0" x="5863.52" y="8497.94" layer="20"/>
+    <poi id="bs_050_volta_11" type="parada" color="0,0.6,0" x="5717.84" y="8280.89" layer="20"/>
+    <poi id="bs_050_volta_12" type="parada" color="0,0.6,0" x="5292.99" y="8139.45" layer="20"/>
+    <poi id="bs_050_volta_13" type="parada" color="0,0.6,0" x="5093.22" y="7805.64" layer="20"/>
+    <poi id="bs_050_volta_14" type="parada" color="0,0.6,0" x="5021.77" y="7468.71" layer="20"/>
     <poi id="bs_050_volta_15" type="parada" color="0,0.6,0" x="4943.34" y="6956.26" layer="20"/>
     <poi id="bs_050_volta_16" type="parada" color="0,0.6,0" x="4842.23" y="6421.36" layer="20"/>
     <poi id="bs_050_volta_17" type="parada" color="0,0.6,0" x="4926.26" y="6157.65" layer="20"/>
@@ -86,28 +85,20 @@
     <poi id="bs_050_volta_22" type="parada" color="0,0.6,0" x="3247.70" y="5020.08" layer="20"/>
     <poi id="bs_050_volta_23" type="parada" color="0,0.6,0" x="3267.32" y="4865.96" layer="20"/>
     <poi id="bs_091_ida_1" type="parada" color="0,0.6,0" x="3267.32" y="4865.96" layer="20"/>
-    <poi id="bs_091_ida_2" type="parada" color="0,0.6,0" x="3263.72" y="4965.65" layer="20"/>
-    <poi id="bs_091_ida_3" type="parada" color="0,0.6,0" x="3262.81" y="4997.63" layer="20"/>
-    <poi id="bs_091_ida_4" type="parada" color="0,0.6,0" x="3261.90" y="5029.62" layer="20"/>
-    <poi id="bs_091_ida_5" type="parada" color="0,0.6,0" x="3260.99" y="5061.61" layer="20"/>
-    <poi id="bs_091_ida_6" type="parada" color="0,0.6,0" x="3260.08" y="5093.59" layer="20"/>
-    <poi id="bs_091_ida_7" type="parada" color="0,0.6,0" x="3259.17" y="5125.58" layer="20"/>
-    <poi id="bs_091_ida_8" type="parada" color="0,0.6,0" x="3261.57" y="5157.38" layer="20"/>
-    <poi id="bs_091_ida_9" type="parada" color="0,0.6,0" x="3279.43" y="5183.52" layer="20"/>
+    <poi id="bs_091_ida_9" type="parada" color="0,0.6,0" x="3261.44" y="5045.61" layer="20"/>
     <poi id="bs_091_ida_10" type="parada" color="0,0.6,0" x="2845.86" y="3979.21" layer="20"/>
-    <poi id="bs_091_ida_11" type="parada" color="0,0.6,0" x="3054.36" y="3805.08" layer="20"/>
-    <poi id="bs_091_ida_12" type="parada" color="0,0.6,0" x="3345.92" y="3862.60" layer="20"/>
-    <poi id="bs_091_ida_13" type="parada" color="0,0.6,0" x="4083.27" y="3588.36" layer="20"/>
-    <poi id="bs_091_ida_14" type="parada" color="0,0.6,0" x="4601.78" y="3755.96" layer="20"/>
-    <poi id="bs_091_ida_15" type="parada" color="0,0.6,0" x="4881.88" y="3759.89" layer="20"/>
-    <poi id="bs_091_ida_16" type="parada" color="0,0.6,0" x="4944.95" y="3528.55" layer="20"/>
-    <poi id="bs_091_ida_17" type="parada" color="0,0.6,0" x="4977.79" y="3260.78" layer="20"/>
+    <poi id="bs_091_ida_11" type="parada" color="0,0.6,0" x="3053.90" y="3909.08" layer="20"/>
+    <poi id="bs_091_ida_12" type="parada" color="0,0.6,0" x="3054.04" y="3877.08" layer="20"/>
+    <poi id="bs_091_ida_13" type="parada" color="0,0.6,0" x="3054.18" y="3845.08" layer="20"/>
+    <poi id="bs_091_ida_14" type="parada" color="0,0.6,0" x="4660.69" y="3735.30" layer="20"/>
+    <poi id="bs_091_ida_15" type="parada" color="0,0.6,0" x="4942.33" y="3632.52" layer="20"/>
+    <poi id="bs_091_ida_16" type="parada" color="0,0.6,0" x="4959.42" y="3296.31" layer="20"/>
     <poi id="bs_091_ida_18" type="parada" color="0,0.6,0" x="4954.24" y="3023.90" layer="20"/>
     <poi id="bs_091_ida_19" type="parada" color="0,0.6,0" x="5016.96" y="2897.38" layer="20"/>
-    <poi id="bs_091_ida_20" type="parada" color="0,0.6,0" x="4849.37" y="2503.52" layer="20"/>
-    <poi id="bs_091_ida_21" type="parada" color="0,0.6,0" x="4864.30" y="2531.82" layer="20"/>
-    <poi id="bs_091_ida_22" type="parada" color="0,0.6,0" x="4887.16" y="2575.32" layer="20"/>
-    <poi id="bs_091_ida_23" type="parada" color="0,0.6,0" x="4902.21" y="2603.56" layer="20"/>
+    <poi id="bs_091_ida_20" type="parada" color="0,0.6,0" x="4859.10" y="2528.81" layer="20"/>
+    <poi id="bs_091_ida_21" type="parada" color="0,0.6,0" x="4783.71" y="2379.29" layer="20"/>
+    <poi id="bs_091_ida_22" type="parada" color="0,0.6,0" x="4954.51" y="2290.26" layer="20"/>
+    <poi id="bs_091_ida_23" type="parada" color="0,0.6,0" x="5030.32" y="2575.84" layer="20"/>
     <poi id="bs_091_ida_24" type="parada" color="0,0.6,0" x="5335.76" y="2759.36" layer="20"/>
     <poi id="bs_091_ida_25" type="parada" color="0,0.6,0" x="5769.85" y="2867.55" layer="20"/>
     <poi id="bs_091_ida_26" type="parada" color="0,0.6,0" x="6052.29" y="2968.22" layer="20"/>

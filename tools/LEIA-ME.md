@@ -5,7 +5,7 @@ Rodar sempre da raiz do repositório (a pasta que contém `sumo/`, `data/` e `to
 ## Uso
 
 ```powershell
-pip install sumolib
+pip install sumolib pyproj
 python tools/gerar_cenario.py                          # offline: posiciona as paradas pela ordem do itinerário
 python tools/gerar_cenario.py --diagnosticar-ruas      # (internet) confere ruas não encontradas / hipóteses no Nominatim
 python tools/gerar_cenario.py --geocodificar --contato seu-email@dominio.com   # (internet) usa o endereço de cada parada
@@ -21,7 +21,23 @@ então a segunda execução é instantânea e funciona offline.
 3. Modo Demand: `File > Demand Elements > Load` com `sumo/routes/vtypes.rou.xml` e `sumo/routes/bus_routes.rou.xml`.
 4. Use `data/relatorio_revisao.csv` (coluna `avisos`/`metodo`) para decidir quais paradas revisar primeiro.
 
-## Correções sem mexer no código (`data/overrides_rotas.json`)
+## Paradas que não existem na rota real (`data/paradas_linhas.csv`)
+A coluna `ativa` (`sim`/`nao`) liga e desliga uma parada. As desativadas continuam no CSV e aparecem no relatório como `desativada`.
+Para reativar, troque `nao` por `sim` e rode o gerador de novo.
+
+## Trechos de rota informados à mão (`trechos_fixos` em `data/overrides_rotas.json`)
+```json
+"050_ida": {"trechos_fixos": [{"arestas": ["ID_A", "ID_B", "ID_C"]}]}
+```
+A rota é obrigada a percorrer exatamente essa sequência, na ordem. O gerador acha sozinho em que ponto da rota ela se encaixa
+(onde causa o menor desvio). Se duas arestas consecutivas não tiverem ligação direta no net, ele completa pelo menor caminho
+e avisa no terminal (`AVISO: ... não há ligação direta; completei com [...]`).
+
+## Terminais
+A fonte dos terminais é `sumo/additional/terminais.add.xml`. O `busstops_linhas.add.xml` é regenerado a cada execução,
+então qualquer ajuste de terminal deve ser feito em `terminais.add.xml`.
+
+## Outros ajustes (`data/overrides_rotas.json`)
 ```json
 {
   "050_ida":   {"paradas_fixas": {"26": {"edge": "ID_DA_ARESTA", "pos": 30}}},

@@ -1,132 +1,132 @@
-linha,sentido,ordem,tipo,terminal_id,rua,numero,referencia,texto_original
-090,ida,1,terminal,term_campus,,,,Terminal De Integração Campus
-090,ida,2,parada,,Av. Gov. Marcelo Deda Chagas,731,,Av. Gov. Marcelo Deda Chagas 731
-090,ida,3,parada,,Av. Mal. Cândido Rondon,1515,Progresso,Av. Mal. Cândido Rondon 1515 | Progresso
-090,ida,4,parada,,Av. Mal. Cândido Rondon,890,,Av. Mal. Cândido Rondon 890
-090,ida,5,parada,,Av. Prof. José Bonifácio Forte Neto,,Hemocentro De Sergipe,Av. Prof. José Bonifácio Forte Neto | Hemocentro De Sergipe
-090,ida,6,parada,,Av. Prof. José Bonifácio Forte Neto,105,,"Av. Prof. José Bonifácio Forte Neto, 105"
-090,ida,7,terminal,term_zona_oeste,,,,Terminal De Integração Zona Oeste (Leonel Brizola)
-090,ida,8,parada,,Av. Pres. Tancredo Neves,5550,,Av. Pres. Tancredo Neves 5550
-090,ida,9,parada,,Av. Pres. Tancredo Neves,5655,,"Av. Pres. Tancredo Neves, 5655"
-090,ida,10,parada,,Av. Pres. Tancredo Neves,6055,,"Av. Pres. Tancredo Neves, 6055"
-090,ida,11,parada,,Av. Pres. Tancredo Neves,4911,,"Av. Pres. Tancredo Neves, 4911"
-090,ida,12,parada,,Av. Pres. Tancredo Neves,8215,,"Av. Pres. Tancredo Neves, 8215"
-090,ida,13,parada,,Av. Pres. Tancredo Neves,3803,,Av. Pres. Tancredo Neves 3803
-090,ida,14,parada,,Av. Pres. Tancredo Neves,3231,,Av. Pres. Tancredo Neves 3231
-090,ida,15,parada,,Av. Pres. Tancredo Neves,,Ferreira Costa,Av. Pres. Tancredo Neves | Ferreira Costa
-090,ida,16,terminal,term_dia,,,,Terminal De Integração D.I.A (Distrito Industrial De Aracaju)
-090,volta,1,terminal,term_dia,,,,Terminal De Integração D.I.A (Distrito Industrial De Aracaju)
-090,volta,2,parada,,Av. Pres. Tancredo Neves,,Praça Anival Dantas,Av. Pres. Tancredo Neves | Praça Anival Dantas
-090,volta,3,parada,,Av. Pres. Tancredo Neves,3420,,"Av. Pres. Tancredo Neves, 3420"
-090,volta,4,parada,,Av. Pres. Tancredo Neves,3801,,"Av. Pres. Tancredo Neves, 3801"
-090,volta,5,parada,,Av. Pres. Tancredo Neves,3960,,"Av. Pres. Tancredo Neves, 3960"
-090,volta,6,parada,,Av. Pres. Tancredo Neves,5033,,"Av. Pres. Tancredo Neves, 5033"
-090,volta,7,parada,,Av. Pres. Tancredo Neves,6056,,"Av. Pres. Tancredo Neves, 6056"
-090,volta,8,parada,,Av. Pres. Tancredo Neves,5660,,"Av. Pres. Tancredo Neves, 5660"
-090,volta,9,parada,,Av. Pres. Tancredo Neves,2012,,Av. Pres. Tancredo Neves 2012
-090,volta,10,parada,,Av. Pres. Tancredo Neves,2595,,Av. Pres. Tancredo Neves 2595
-090,volta,11,parada,,Av. Pres. Tancredo Neves,2880,,"Av. Pres. Tancredo Neves, 2880"
-090,volta,12,terminal,term_zona_oeste,,,,Terminal De Integração Zona Oeste (Leonel Brizola)
-090,volta,13,parada,,Av. Mal. Cândido Rondon,901,,Av. Mal. Cândido Rondon 901
-090,volta,14,parada,,Av. Mal. Cândido Rondon,870,,Av. Mal. Cândido Rondon 870
-090,volta,15,parada,,Av. Mal. Cândido Rondon,1346,,Av. Mal. Cândido Rondon 1346
-090,volta,16,parada,,Av. Gov. Marcelo Deda Chagas,730,,Av. Gov. Marcelo Deda Chagas 730
-090,volta,17,terminal,term_campus,,,,Terminal De Integração Campus
-091,ida,1,terminal,term_campus,,,,Terminal De Integração Campus
-091,ida,2,parada,,Av. Gov. Marcelo Deda Chagas,208,,Av. Gov. Marcelo Deda Chagas 208
-091,ida,3,parada,,Av. João Bebe Água,736,,"Av. João Bebe Água, 736"
-091,ida,4,parada,,Av. João Bebe Água,964,,Av. João Bebe Água 964
-091,ida,5,parada,,Av. João Bebe Água,1100,,"Av. João Bebe Água ,1100"
-091,ida,6,parada,,Av. João Bebe Água,1808,,Av. João Bebe Água 1808
-091,ida,7,parada,,Av. João Bebe Água,1881,,Av. João Bebe Água 1881
-091,ida,8,parada,,Av. João Bebe Água,1101,,"Av. João Bebe Água, 1101"
-091,ida,9,parada,,Av. João Bebe Água,985,,Av. João Bebe Água 985
-091,ida,10,parada,,Rua I,102,,Rua I 102
-091,ida,11,parada,,Rua Joaquim De Barros,223a,,Rua Joaquim De Barros 223a
-091,ida,12,parada,,Rua Saneamento,94,,Rua Saneamento 94
-091,ida,13,parada,,Rua J,7,,Rua J 7
-091,ida,14,parada,,Rua Jasiel De Brito Côrtes,847,,Rua Jasiel De Brito Côrtes 847
-091,ida,15,parada,,Rua Jasiel De Brito Côrtes,715,,Rua Jasiel De Brito Côrtes 715
-091,ida,16,parada,,Rua Jasiel De Brito Côrtes,80,,"Rua Jasiel De Brito Côrtes, 80"
-091,ida,17,parada,,Rua Jasiel De Brito Côrtes,450,,"Rua Jasiel De Brito Côrtes, 450"
-091,ida,18,parada,,Rua Pedro Brito Dos Santos,,Res. Vila Velha,Rua Pedro Brito Dos Santos | Res. Vila Velha
-091,ida,19,parada,,Rua Pedro Brito Dos Santos,,Bela Vista Residencial,Rua Pedro Brito Dos Santos | Bela Vista Residencial
-091,ida,20,parada,,Rua Projetada,16,,Rua Projetada 16
-091,ida,21,parada,,Av. Escritor Graciliano Ramos,746,,Av. Escritor Graciliano Ramos 746
-091,ida,22,parada,,Av. Cel. Sizinio Da Rocha,103,,Av. Cel. Sizinio Da Rocha 103
-091,ida,23,parada,,Rua Hildete Falcão Batista,37,,Rua Hildete Falcão Batista 37
-091,ida,24,parada,,Av. Farmacêutica Cezartina Régis,793,,"Av. Farmacêutica Cezartina Régis , 793"
-091,ida,25,parada,,Av. Farmacêutica Cezartina Régis,357,,Av. Farmacêutica Cezartina Régis 357
-091,ida,26,parada,,Rua Moizete Leite Mendonça,,,Rua Moizete Leite Mendonça
-091,ida,27,parada,,Av. Pres. Tancredo Neves,,Ferreira Costa,Av. Pres. Tancredo Neves | Ferreira Costa
-091,ida,28,terminal,term_dia,,,,Terminal De Integração D.I.A (Distrito Industrial De Aracaju)
-091,volta,1,terminal,term_dia,,,,Terminal De Integração D.I.A (Distrito Industrial De Aracaju)
-091,volta,2,parada,,Av. Pres. Tancredo Neves,,Praça Anival Dantas,Av. Pres. Tancredo Neves | Praça Anival Dantas
-091,volta,3,parada,,Rua Major João Téles,88,,"Rua Major João Téles, 88"
-091,volta,4,parada,,Av. Farmacêutica Cezartina Régis,438,,Av. Farmacêutica Cezartina Régis 438
-091,volta,5,parada,,Av. Farmacêutica Cezartina Régis,686,,Av. Farmacêutica Cezartina Régis 686
-091,volta,6,parada,,Av. Rio Poxim,11,,Av. Rio Poxim 11
-091,volta,7,parada,,Estrada Do Jabotiana,605,,"Estrada Do Jabotiana, 605"
-091,volta,8,parada,,Rua Jasiel De Brito Côrtes,540,,"Rua Jasiel De Brito Côrtes, 540"
-091,volta,9,parada,,Rua Jasiel De Brito Côrtes,79,,"Rua Jasiel De Brito Côrtes, 79"
-091,volta,10,parada,,Rua Jasiel De Brito Côrtes,655,,Rua Jasiel De Brito Côrtes 655
-091,volta,11,parada,,Rua Jasiel De Brito Côrtes,847,,Rua Jasiel De Brito Côrtes 847
-091,volta,12,parada,,Rua J,8,,Rua J 8
-091,volta,13,parada,,Rua Saneamento,439,,Rua Saneamento 439
-091,volta,14,parada,,Rua Saneamento,114,,Rua Saneamento 114
-091,volta,15,parada,,Rua I,59,,Rua I 59
-091,volta,16,parada,,Av. João Bebe Água,577,,Av. João Bebe Água 577
-091,volta,17,parada,,Av. Gov. Marcelo Deda Chagas,195,,Av. Gov. Marcelo Deda Chagas 195
-091,volta,18,terminal,term_campus,,,,Terminal De Integração Campus
-050,ida,1,terminal,term_campus,,,,Terminal De Integração Campus
-050,ida,2,parada,,Av. Gov. Marcelo Deda Chagas,731,,Av. Gov. Marcelo Deda Chagas 731
-050,ida,3,parada,,Av. Mal. Cândido Rondon,1515,Progresso,Av. Mal. Cândido Rondon 1515 | Progresso
-050,ida,4,parada,,Av. Mal. Cândido Rondon,890,,Av. Mal. Cândido Rondon 890
-050,ida,5,parada,,Av. Prof. José Bonifácio Forte Neto,,Hemocentro De Sergipe,Av. Prof. José Bonifácio Forte Neto | Hemocentro De Sergipe
-050,ida,6,parada,,Av. Prof. José Bonifácio Forte Neto,105,,"Av. Prof. José Bonifácio Forte Neto, 105"
-050,ida,7,terminal,term_zona_oeste,,,,Terminal De Integração Zona Oeste (Leonel Brizola)
-050,ida,8,parada,,Av. Pres. Tancredo Neves,4210,,Av. Pres. Tancredo Neves 4210
-050,ida,9,parada,,Av. Pres. Tancredo Neves,2717,,Av. Pres. Tancredo Neves 2717
-050,ida,10,parada,,Av. Alcides Fontes,110,,Av. Alcides Fontes 110
-050,ida,11,parada,,Av. Gen. Euclides Figueiredo,243,,Av. Gen. Euclides Figueiredo 243
-050,ida,12,parada,,Av. Gen. Euclides Figueiredo,584,,Av. Gen. Euclides Figueiredo 584
-050,ida,13,parada,,Av. Gen. Euclides Figueiredo,908,,Av. Gen. Euclides Figueiredo 908
-050,ida,14,parada,,Rua Serafim Bonfim,237,,Rua Serafim Bonfim 237
-050,ida,15,parada,,Rua Serafim Bonfim,71,,Rua Serafim Bonfim 71
-050,ida,16,parada,,Rua Gen. Prado,152,,Rua Gen. Prado 152
-050,ida,17,terminal,term_maracaju,,,,Terminal De Integração Maracaju
-050,ida,18,parada,,Av. Visconde De Maracaju,781,,Av. Visconde De Maracaju 781
-050,ida,19,parada,,Av. Visconde De Maracaju,521,,Av. Visconde De Maracaju 521
-050,ida,20,parada,,Av. Visconde De Maracaju,365,,Av. Visconde De Maracaju 365
-050,ida,21,parada,,Av. Visconde De Maracaju,113,,Av. Visconde De Maracaju 113
-050,ida,22,parada,,Av. Visconde De Maracaju,,Paróquia Pio X,Av. Visconde De Maracaju | Paróquia Pio X
-050,ida,23,parada,,Av. Visconde De Maracaju,147,,Av. Visconde De Maracaju 147
-050,ida,24,parada,,Av. Visconde De Maracaju,72,,Av. Visconde De Maracaju 72
-050,ida,25,parada,,Rua Do Carmo,147,,Rua Do Carmo 147
-050,ida,26,parada,,Rua Santa Maria,2-92,,"Rua Santa Maria, 2-92"
-050,ida,27,parada,,Rua Cláudio Batista,169,,"Rua Cláudio Batista, 169"
-050,ida,28,parada,,Rua Cláudio Batista,334,,"Rua Cláudio Batista, 334"
-050,ida,29,parada,,Rua Cláudio Batista,454,,Rua Cláudio Batista 454
-050,volta,1,parada,,Rua Cláudio Batista,454,,Rua Cláudio Batista 454
-050,volta,2,parada,,Rua Santa Terezinha,,E.E Clodoaldo De Alencar,Rua Santa Terezinha | E.E Clodoaldo De Alencar
-050,volta,3,parada,,Av. Sanatório,39,,Av. Sanatório 39
-050,volta,4,parada,,Rua Artur Fortes,80,,Rua Artur Fortes 80
-050,volta,5,parada,,Av. Visconde De Maracaju,388,,Av. Visconde De Maracaju 388
-050,volta,6,parada,,Av. Visconde De Maracaju,604,,Av. Visconde De Maracaju 604
-050,volta,7,parada,,Av. Visconde De Maracaju,850,,Av. Visconde De Maracaju 850
-050,volta,8,terminal,term_maracaju,,,,Terminal De Integração Maracaju
-050,volta,9,parada,,Rua São Francisco De Assis,1149,,Rua São Francisco De Assis 1149
-050,volta,10,parada,,Rua São Francisco De Assis,755,,Rua São Francisco De Assis 755
-050,volta,11,parada,,Rua São Francisco De Assis,535,,Rua São Francisco De Assis 535
-050,volta,12,parada,,Av. Gen. Euclides Figueiredo,905,,Av. Gen. Euclides Figueiredo 905
-050,volta,13,parada,,Av. Gen. Euclides Figueiredo,457,,Av. Gen. Euclides Figueiredo 457
-050,volta,14,parada,,Av. Gen. Euclides Figueiredo,275,,Av. Gen. Euclides Figueiredo 275
-050,volta,15,parada,,Av. Alcides Fontes,218,,Av. Alcides Fontes 218
-050,volta,16,parada,,Av. Pres. Tancredo Neves,2728,,Av. Pres. Tancredo Neves 2728
-050,volta,17,parada,,Av. Pres. Tancredo Neves,4201,,Av. Pres. Tancredo Neves 4201
-050,volta,18,terminal,term_zona_oeste,,,,Terminal De Integração Zona Oeste (Leonel Brizola)
-050,volta,19,parada,,Av. Mal. Cândido Rondon,901,,Av. Mal. Cândido Rondon 901
-050,volta,20,parada,,Av. Mal. Cândido Rondon,870,,Av. Mal. Cândido Rondon 870
-050,volta,21,parada,,Av. Mal. Cândido Rondon,1346,,Av. Mal. Cândido Rondon 1346
-050,volta,22,parada,,Av. Gov. Marcelo Deda Chagas,730,,Av. Gov. Marcelo Deda Chagas 730
-050,volta,23,terminal,term_campus,,,,Terminal De Integração Campus
+linha,sentido,ordem,tipo,terminal_id,rua,numero,referencia,texto_original,ativa
+090,ida,1,terminal,term_campus,,,,Terminal De Integração Campus,sim
+090,ida,2,parada,,Av. Gov. Marcelo Deda Chagas,731,,Av. Gov. Marcelo Deda Chagas 731,sim
+090,ida,3,parada,,Av. Mal. Cândido Rondon,1515,Progresso,Av. Mal. Cândido Rondon 1515 | Progresso,sim
+090,ida,4,parada,,Av. Mal. Cândido Rondon,890,,Av. Mal. Cândido Rondon 890,sim
+090,ida,5,parada,,Av. Prof. José Bonifácio Forte Neto,,Hemocentro De Sergipe,Av. Prof. José Bonifácio Forte Neto | Hemocentro De Sergipe,sim
+090,ida,6,parada,,Av. Prof. José Bonifácio Forte Neto,105,,"Av. Prof. José Bonifácio Forte Neto, 105",sim
+090,ida,7,terminal,term_zona_oeste,,,,Terminal De Integração Zona Oeste (Leonel Brizola),sim
+090,ida,8,parada,,Av. Pres. Tancredo Neves,5550,,Av. Pres. Tancredo Neves 5550,sim
+090,ida,9,parada,,Av. Pres. Tancredo Neves,5655,,"Av. Pres. Tancredo Neves, 5655",sim
+090,ida,10,parada,,Av. Pres. Tancredo Neves,6055,,"Av. Pres. Tancredo Neves, 6055",sim
+090,ida,11,parada,,Av. Pres. Tancredo Neves,4911,,"Av. Pres. Tancredo Neves, 4911",sim
+090,ida,12,parada,,Av. Pres. Tancredo Neves,8215,,"Av. Pres. Tancredo Neves, 8215",sim
+090,ida,13,parada,,Av. Pres. Tancredo Neves,3803,,Av. Pres. Tancredo Neves 3803,sim
+090,ida,14,parada,,Av. Pres. Tancredo Neves,3231,,Av. Pres. Tancredo Neves 3231,sim
+090,ida,15,parada,,Av. Pres. Tancredo Neves,,Ferreira Costa,Av. Pres. Tancredo Neves | Ferreira Costa,sim
+090,ida,16,terminal,term_dia,,,,Terminal De Integração D.I.A (Distrito Industrial De Aracaju),sim
+090,volta,1,terminal,term_dia,,,,Terminal De Integração D.I.A (Distrito Industrial De Aracaju),sim
+090,volta,2,parada,,Av. Pres. Tancredo Neves,,Praça Anival Dantas,Av. Pres. Tancredo Neves | Praça Anival Dantas,sim
+090,volta,3,parada,,Av. Pres. Tancredo Neves,3420,,"Av. Pres. Tancredo Neves, 3420",sim
+090,volta,4,parada,,Av. Pres. Tancredo Neves,3801,,"Av. Pres. Tancredo Neves, 3801",sim
+090,volta,5,parada,,Av. Pres. Tancredo Neves,3960,,"Av. Pres. Tancredo Neves, 3960",sim
+090,volta,6,parada,,Av. Pres. Tancredo Neves,5033,,"Av. Pres. Tancredo Neves, 5033",sim
+090,volta,7,parada,,Av. Pres. Tancredo Neves,6056,,"Av. Pres. Tancredo Neves, 6056",sim
+090,volta,8,parada,,Av. Pres. Tancredo Neves,5660,,"Av. Pres. Tancredo Neves, 5660",sim
+090,volta,9,parada,,Av. Pres. Tancredo Neves,2012,,Av. Pres. Tancredo Neves 2012,sim
+090,volta,10,parada,,Av. Pres. Tancredo Neves,2595,,Av. Pres. Tancredo Neves 2595,sim
+090,volta,11,parada,,Av. Pres. Tancredo Neves,2880,,"Av. Pres. Tancredo Neves, 2880",sim
+090,volta,12,terminal,term_zona_oeste,,,,Terminal De Integração Zona Oeste (Leonel Brizola),sim
+090,volta,13,parada,,Av. Mal. Cândido Rondon,901,,Av. Mal. Cândido Rondon 901,sim
+090,volta,14,parada,,Av. Mal. Cândido Rondon,870,,Av. Mal. Cândido Rondon 870,sim
+090,volta,15,parada,,Av. Mal. Cândido Rondon,1346,,Av. Mal. Cândido Rondon 1346,sim
+090,volta,16,parada,,Av. Gov. Marcelo Deda Chagas,730,,Av. Gov. Marcelo Deda Chagas 730,sim
+090,volta,17,terminal,term_campus,,,,Terminal De Integração Campus,sim
+091,ida,1,terminal,term_campus,,,,Terminal De Integração Campus,sim
+091,ida,2,parada,,Av. Gov. Marcelo Deda Chagas,208,,Av. Gov. Marcelo Deda Chagas 208,nao
+091,ida,3,parada,,Av. João Bebe Água,736,,"Av. João Bebe Água, 736",nao
+091,ida,4,parada,,Av. João Bebe Água,964,,Av. João Bebe Água 964,nao
+091,ida,5,parada,,Av. João Bebe Água,1100,,"Av. João Bebe Água ,1100",nao
+091,ida,6,parada,,Av. João Bebe Água,1808,,Av. João Bebe Água 1808,nao
+091,ida,7,parada,,Av. João Bebe Água,1881,,Av. João Bebe Água 1881,nao
+091,ida,8,parada,,Av. João Bebe Água,1101,,"Av. João Bebe Água, 1101",nao
+091,ida,9,parada,,Av. João Bebe Água,985,,Av. João Bebe Água 985,sim
+091,ida,10,parada,,Rua I,102,,Rua I 102,sim
+091,ida,11,parada,,Rua Joaquim De Barros,223a,,Rua Joaquim De Barros 223a,sim
+091,ida,12,parada,,Rua Saneamento,94,,Rua Saneamento 94,sim
+091,ida,13,parada,,Rua J,7,,Rua J 7,sim
+091,ida,14,parada,,Rua Jasiel De Brito Côrtes,847,,Rua Jasiel De Brito Côrtes 847,sim
+091,ida,15,parada,,Rua Jasiel De Brito Côrtes,715,,Rua Jasiel De Brito Côrtes 715,sim
+091,ida,16,parada,,Rua Jasiel De Brito Côrtes,80,,"Rua Jasiel De Brito Côrtes, 80",sim
+091,ida,17,parada,,Rua Jasiel De Brito Côrtes,450,,"Rua Jasiel De Brito Côrtes, 450",nao
+091,ida,18,parada,,Rua Pedro Brito Dos Santos,,Res. Vila Velha,Rua Pedro Brito Dos Santos | Res. Vila Velha,sim
+091,ida,19,parada,,Rua Pedro Brito Dos Santos,,Bela Vista Residencial,Rua Pedro Brito Dos Santos | Bela Vista Residencial,sim
+091,ida,20,parada,,Rua Projetada,16,,Rua Projetada 16,sim
+091,ida,21,parada,,Av. Escritor Graciliano Ramos,746,,Av. Escritor Graciliano Ramos 746,sim
+091,ida,22,parada,,Av. Cel. Sizinio Da Rocha,103,,Av. Cel. Sizinio Da Rocha 103,sim
+091,ida,23,parada,,Rua Hildete Falcão Batista,37,,Rua Hildete Falcão Batista 37,sim
+091,ida,24,parada,,Av. Farmacêutica Cezartina Régis,793,,"Av. Farmacêutica Cezartina Régis , 793",sim
+091,ida,25,parada,,Av. Farmacêutica Cezartina Régis,357,,Av. Farmacêutica Cezartina Régis 357,sim
+091,ida,26,parada,,Rua Moizete Leite Mendonça,,,Rua Moizete Leite Mendonça,sim
+091,ida,27,parada,,Av. Pres. Tancredo Neves,,Ferreira Costa,Av. Pres. Tancredo Neves | Ferreira Costa,sim
+091,ida,28,terminal,term_dia,,,,Terminal De Integração D.I.A (Distrito Industrial De Aracaju),sim
+091,volta,1,terminal,term_dia,,,,Terminal De Integração D.I.A (Distrito Industrial De Aracaju),sim
+091,volta,2,parada,,Av. Pres. Tancredo Neves,,Praça Anival Dantas,Av. Pres. Tancredo Neves | Praça Anival Dantas,sim
+091,volta,3,parada,,Rua Major João Téles,88,,"Rua Major João Téles, 88",sim
+091,volta,4,parada,,Av. Farmacêutica Cezartina Régis,438,,Av. Farmacêutica Cezartina Régis 438,sim
+091,volta,5,parada,,Av. Farmacêutica Cezartina Régis,686,,Av. Farmacêutica Cezartina Régis 686,sim
+091,volta,6,parada,,Av. Rio Poxim,11,,Av. Rio Poxim 11,sim
+091,volta,7,parada,,Estrada Do Jabotiana,605,,"Estrada Do Jabotiana, 605",sim
+091,volta,8,parada,,Rua Jasiel De Brito Côrtes,540,,"Rua Jasiel De Brito Côrtes, 540",sim
+091,volta,9,parada,,Rua Jasiel De Brito Côrtes,79,,"Rua Jasiel De Brito Côrtes, 79",sim
+091,volta,10,parada,,Rua Jasiel De Brito Côrtes,655,,Rua Jasiel De Brito Côrtes 655,sim
+091,volta,11,parada,,Rua Jasiel De Brito Côrtes,847,,Rua Jasiel De Brito Côrtes 847,sim
+091,volta,12,parada,,Rua J,8,,Rua J 8,sim
+091,volta,13,parada,,Rua Saneamento,439,,Rua Saneamento 439,sim
+091,volta,14,parada,,Rua Saneamento,114,,Rua Saneamento 114,sim
+091,volta,15,parada,,Rua I,59,,Rua I 59,sim
+091,volta,16,parada,,Av. João Bebe Água,577,,Av. João Bebe Água 577,sim
+091,volta,17,parada,,Av. Gov. Marcelo Deda Chagas,195,,Av. Gov. Marcelo Deda Chagas 195,sim
+091,volta,18,terminal,term_campus,,,,Terminal De Integração Campus,sim
+050,ida,1,terminal,term_campus,,,,Terminal De Integração Campus,sim
+050,ida,2,parada,,Av. Gov. Marcelo Deda Chagas,731,,Av. Gov. Marcelo Deda Chagas 731,sim
+050,ida,3,parada,,Av. Mal. Cândido Rondon,1515,Progresso,Av. Mal. Cândido Rondon 1515 | Progresso,sim
+050,ida,4,parada,,Av. Mal. Cândido Rondon,890,,Av. Mal. Cândido Rondon 890,sim
+050,ida,5,parada,,Av. Prof. José Bonifácio Forte Neto,,Hemocentro De Sergipe,Av. Prof. José Bonifácio Forte Neto | Hemocentro De Sergipe,sim
+050,ida,6,parada,,Av. Prof. José Bonifácio Forte Neto,105,,"Av. Prof. José Bonifácio Forte Neto, 105",nao
+050,ida,7,terminal,term_zona_oeste,,,,Terminal De Integração Zona Oeste (Leonel Brizola),sim
+050,ida,8,parada,,Av. Pres. Tancredo Neves,4210,,Av. Pres. Tancredo Neves 4210,sim
+050,ida,9,parada,,Av. Pres. Tancredo Neves,2717,,Av. Pres. Tancredo Neves 2717,sim
+050,ida,10,parada,,Av. Alcides Fontes,110,,Av. Alcides Fontes 110,sim
+050,ida,11,parada,,Av. Gen. Euclides Figueiredo,243,,Av. Gen. Euclides Figueiredo 243,sim
+050,ida,12,parada,,Av. Gen. Euclides Figueiredo,584,,Av. Gen. Euclides Figueiredo 584,sim
+050,ida,13,parada,,Av. Gen. Euclides Figueiredo,908,,Av. Gen. Euclides Figueiredo 908,sim
+050,ida,14,parada,,Rua Serafim Bonfim,237,,Rua Serafim Bonfim 237,sim
+050,ida,15,parada,,Rua Serafim Bonfim,71,,Rua Serafim Bonfim 71,sim
+050,ida,16,parada,,Rua Gen. Prado,152,,Rua Gen. Prado 152,sim
+050,ida,17,terminal,term_maracaju,,,,Terminal De Integração Maracaju,sim
+050,ida,18,parada,,Av. Visconde De Maracaju,781,,Av. Visconde De Maracaju 781,sim
+050,ida,19,parada,,Av. Visconde De Maracaju,521,,Av. Visconde De Maracaju 521,sim
+050,ida,20,parada,,Av. Visconde De Maracaju,365,,Av. Visconde De Maracaju 365,sim
+050,ida,21,parada,,Av. Visconde De Maracaju,113,,Av. Visconde De Maracaju 113,sim
+050,ida,22,parada,,Av. Visconde De Maracaju,,Paróquia Pio X,Av. Visconde De Maracaju | Paróquia Pio X,sim
+050,ida,23,parada,,Av. Visconde De Maracaju,147,,Av. Visconde De Maracaju 147,sim
+050,ida,24,parada,,Av. Visconde De Maracaju,72,,Av. Visconde De Maracaju 72,sim
+050,ida,25,parada,,Rua Do Carmo,147,,Rua Do Carmo 147,sim
+050,ida,26,parada,,Rua Santa Maria,2-92,,"Rua Santa Maria, 2-92",sim
+050,ida,27,parada,,Rua Cláudio Batista,169,,"Rua Cláudio Batista, 169",sim
+050,ida,28,parada,,Rua Cláudio Batista,334,,"Rua Cláudio Batista, 334",sim
+050,ida,29,parada,,Rua Cláudio Batista,454,,Rua Cláudio Batista 454,sim
+050,volta,1,parada,,Rua Cláudio Batista,454,,Rua Cláudio Batista 454,sim
+050,volta,2,parada,,Rua Santa Terezinha,,E.E Clodoaldo De Alencar,Rua Santa Terezinha | E.E Clodoaldo De Alencar,sim
+050,volta,3,parada,,Av. Sanatório,39,,Av. Sanatório 39,sim
+050,volta,4,parada,,Rua Artur Fortes,80,,Rua Artur Fortes 80,sim
+050,volta,5,parada,,Av. Visconde De Maracaju,388,,Av. Visconde De Maracaju 388,sim
+050,volta,6,parada,,Av. Visconde De Maracaju,604,,Av. Visconde De Maracaju 604,sim
+050,volta,7,parada,,Av. Visconde De Maracaju,850,,Av. Visconde De Maracaju 850,sim
+050,volta,8,terminal,term_maracaju,,,,Terminal De Integração Maracaju,sim
+050,volta,9,parada,,Rua São Francisco De Assis,1149,,Rua São Francisco De Assis 1149,sim
+050,volta,10,parada,,Rua São Francisco De Assis,755,,Rua São Francisco De Assis 755,sim
+050,volta,11,parada,,Rua São Francisco De Assis,535,,Rua São Francisco De Assis 535,sim
+050,volta,12,parada,,Av. Gen. Euclides Figueiredo,905,,Av. Gen. Euclides Figueiredo 905,sim
+050,volta,13,parada,,Av. Gen. Euclides Figueiredo,457,,Av. Gen. Euclides Figueiredo 457,sim
+050,volta,14,parada,,Av. Gen. Euclides Figueiredo,275,,Av. Gen. Euclides Figueiredo 275,sim
+050,volta,15,parada,,Av. Alcides Fontes,218,,Av. Alcides Fontes 218,sim
+050,volta,16,parada,,Av. Pres. Tancredo Neves,2728,,Av. Pres. Tancredo Neves 2728,sim
+050,volta,17,parada,,Av. Pres. Tancredo Neves,4201,,Av. Pres. Tancredo Neves 4201,sim
+050,volta,18,terminal,term_zona_oeste,,,,Terminal De Integração Zona Oeste (Leonel Brizola),sim
+050,volta,19,parada,,Av. Mal. Cândido Rondon,901,,Av. Mal. Cândido Rondon 901,sim
+050,volta,20,parada,,Av. Mal. Cândido Rondon,870,,Av. Mal. Cândido Rondon 870,sim
+050,volta,21,parada,,Av. Mal. Cândido Rondon,1346,,Av. Mal. Cândido Rondon 1346,sim
+050,volta,22,parada,,Av. Gov. Marcelo Deda Chagas,730,,Av. Gov. Marcelo Deda Chagas 730,sim
+050,volta,23,terminal,term_campus,,,,Terminal De Integração Campus,sim

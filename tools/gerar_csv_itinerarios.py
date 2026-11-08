@@ -134,6 +134,8 @@ Av. Mal. Cândido Rondon 1346
 Av. Gov. Marcelo Deda Chagas 730
 Terminal De Integração Campus""",
 }
+# Paradas que constam no itinerário publicado mas não existem na rota real (conferido pelo autor).
+DESATIVADAS = {("050", "ida"): {6}, ("091", "ida"): {2, 3, 4, 5, 6, 7, 8, 17}}
 TERMINAIS = {"campus":"term_campus","d.i.a":"term_dia","zona oeste":"term_zona_oeste","maracaju":"term_maracaju"}
 
 def parse(txt):
@@ -160,7 +162,8 @@ for (linha, sentido), bloco in ITIN.items():
         else:
             rua, num, ref = parse(ln)
         rows.append(dict(linha=linha, sentido=sentido, ordem=i+1, tipo="terminal" if term else "parada",
-                         terminal_id=term, rua=rua, numero=num, referencia=ref, texto_original=ln.strip()))
+                         terminal_id=term, rua=rua, numero=num, referencia=ref, texto_original=ln.strip(),
+                         ativa="nao" if (i+1) in DESATIVADAS.get((linha, sentido), set()) else "sim"))
 out = pathlib.Path(sys.argv[1] if len(sys.argv) > 1 else "data/paradas_linhas.csv")
 out.parent.mkdir(parents=True, exist_ok=True)
 with out.open("w", newline="", encoding="utf-8") as f:
