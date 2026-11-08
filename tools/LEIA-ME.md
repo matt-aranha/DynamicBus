@@ -33,6 +33,18 @@ A rota é obrigada a percorrer exatamente essa sequência, na ordem. O gerador a
 (onde causa o menor desvio). Se duas arestas consecutivas não tiverem ligação direta no net, ele completa pelo menor caminho
 e avisa no terminal (`AVISO: ... não há ligação direta; completei com [...]`).
 
+## Remover e acrescentar paradas por aresta (`data/overrides_rotas.json`)
+```json
+"050_ida": {
+  "remover_paradas": [{"edge": "605955504#3"}],
+  "paradas_extras":  [{"edge": "375815120#3", "nome": "Av. Visconde de Maracaju (opcional)"}]
+}
+"091_ida": {"remover_paradas": [{"edge": "170003897", "manter_ordem": "11"}]}
+```
+- `remover_paradas`: tira da rota todas as paradas que ficaram naquela aresta (`manter_ordem` preserva a parada com esse número).
+- `paradas_extras`: cria uma parada no meio da aresta (ela precisa fazer parte da rota). Entra na ordem certa pela posição na rota.
+- As demais paradas não mudam de lugar. Cada remoção aparece no relatório como `removida_manual`, e cada inclusão como `adicionada_manual`.
+
 ## Terminais
 A fonte dos terminais é `sumo/additional/terminais.add.xml`. O `busstops_linhas.add.xml` é regenerado a cada execução,
 então qualquer ajuste de terminal deve ser feito em `terminais.add.xml`.

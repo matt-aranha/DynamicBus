@@ -45,22 +45,24 @@
 050_ida,11,Av. Gen. Euclides Figueiredo 243,Avenida General Euclides Figueiredo,exato,ordem_na_rua,bs_050i_11,-313114486#1_0,138.0,-10.900973,-37.088987,,
 050_ida,12,Av. Gen. Euclides Figueiredo 584,Avenida General Euclides Figueiredo,exato,ordem_na_rua,bs_050i_12,-313114486#0_0,314.0,-10.897971,-37.088379,,
 050_ida,13,Av. Gen. Euclides Figueiredo 908,Avenida General Euclides Figueiredo,exato,ordem_na_rua,bs_050i_13,-428111069#2_0,50.0,-10.894935,-37.086569,,
-050_ida,14,Rua Serafim Bonfim 237,arestas manuais,manual,ordem_na_rua,bs_050i_14,101187621#0_0,74.0,-10.893578,-37.085155,,
+050_ida,14,Rua Serafim Bonfim 237,,,removida_manual,,,,,,,removida_da_aresta_101187621#0
 050_ida,15,Rua Serafim Bonfim 71,arestas manuais,manual,ordem_na_rua,bs_050i_15,101187621#1_0,122.0,-10.894333,-37.084021,,
 050_ida,16,Rua Gen. Prado 152,Rua Erundina Lopes Rua General Prado; Rua General Prado,exato,ordem_na_rua,bs_050i_16,97221519#4_0,34.0,-10.89144,-37.080055,,
 050_ida,17,Terminal De Integração Maracaju,,,terminal,term_maracaju,1108602043#0_0,55.0,-10.88904,-37.07915,,
-050_ida,18,Av. Visconde De Maracaju 781,Avenida Visconde de Maracaju; Rua G Avenida Visconde de Maracaju,exato,ordem_na_rua,bs_050i_18,605955504#1_0,18.0,-10.889418,-37.077997,,
-050_ida,19,Av. Visconde De Maracaju 521,Avenida Visconde de Maracaju; Rua G Avenida Visconde de Maracaju,exato,ordem_na_rua,bs_050i_19,605955504#3_0,10.0,-10.889631,-37.077614,,
-050_ida,20,Av. Visconde De Maracaju 365,Avenida Visconde de Maracaju; Rua G Avenida Visconde de Maracaju,exato,ordem_na_rua,bs_050i_20,605955504#3_0,42.0,-10.889767,-37.077356,,
-050_ida,21,Av. Visconde De Maracaju 113,Avenida Visconde de Maracaju; Rua G Avenida Visconde de Maracaju,exato,ordem_na_rua,bs_050i_21,605955504#4_0,10.0,-10.889964,-37.076987,,
-050_ida,22,Av. Visconde De Maracaju | Paróquia Pio X,Avenida Visconde de Maracaju; Rua G Avenida Visconde de Maracaju,exato,ordem_na_rua,bs_050i_22,605955504#4_0,42.0,-10.890102,-37.07673,,
-050_ida,23,Av. Visconde De Maracaju 147,Avenida Visconde de Maracaju; Rua G Avenida Visconde de Maracaju,exato,ordem_na_rua,bs_050i_23,605955504#10_0,10.0,-10.890823,-37.075475,,
+050_ida,18,Av. Visconde De Maracaju 781,,,removida_manual,,,,,,,removida_da_aresta_605955504#1
+050_ida,19,Av. Visconde De Maracaju 521,,,removida_manual,,,,,,,removida_da_aresta_605955504#3
+050_ida,20,Av. Visconde De Maracaju 365,,,removida_manual,,,,,,,removida_da_aresta_605955504#3
+050_ida,21,Av. Visconde De Maracaju 113,,,removida_manual,,,,,,,removida_da_aresta_605955504#4
+050_ida,22,Av. Visconde De Maracaju | Paróquia Pio X,,,removida_manual,,,,,,,removida_da_aresta_605955504#4
+050_ida,23,Av. Visconde De Maracaju 147,,,removida_manual,,,,,,,removida_da_aresta_605955504#10
 050_ida,24,Av. Visconde De Maracaju 72,Avenida Visconde de Maracaju; Rua G Avenida Visconde de Maracaju,exato,ordem_na_rua,bs_050i_24,605955504#12_0,10.0,-10.891206,-37.074855,,
 050_ida,25,Rua Do Carmo 147,arestas manuais,manual,ordem_na_rua,bs_050i_25,216463968#0_0,42.0,-10.899076,-37.05949,,
 050_ida,26,"Rua Santa Maria, 2-92",arestas manuais,manual,ordem_na_rua,bs_050i_26,-81931236_0,34.0,-10.896036,-37.060245,,
-050_ida,27,"Rua Cláudio Batista, 169",arestas manuais,manual,ordem_na_rua,bs_050i_27,352179032#0_0,66.0,-10.89517,-37.06034,,
-050_ida,28,"Rua Cláudio Batista, 334",arestas manuais,manual,ordem_na_rua,bs_050i_28,352179032#2_0,34.0,-10.894432,-37.061287,,
+050_ida,27,"Rua Cláudio Batista, 169",,,removida_manual,,,,,,,removida_da_aresta_352179032#0
+050_ida,28,"Rua Cláudio Batista, 334",,,removida_manual,,,,,,,removida_da_aresta_352179032#2
 050_ida,29,Rua Cláudio Batista 454,arestas manuais,manual,ordem_na_rua,bs_050i_29,352179032#4_0,6.9,-10.893995,-37.062005,,
+050_ida,100,Ponto adicionado 050 ida (aresta 375815120#3),,,adicionada_manual,bs_050i_100,375815120#3_0,14.8,-10.894028,-37.069773,,
+050_ida,101,Ponto adicionado 050 ida (aresta 603551645#2),,,adicionada_manual,bs_050i_101,603551645#2_0,35.3,-10.898603,-37.06612,,
 050_volta,1,Rua Cláudio Batista 454,arestas manuais,manual,reaproveitada,bs_050i_29,352179032#4_0,6.9,-10.893995,-37.062005,,
 050_volta,2,Rua Santa Terezinha | E.E Clodoaldo De Alencar,arestas manuais,manual,ordem_na_rua,bs_050v_02,-352179031#0_0,34.0,-10.890445,-37.06644,,
 050_volta,3,Av. Sanatório 39,arestas manuais,manual,ordem_na_rua,bs_050v_03,162014981#0_0,114.0,-10.892704,-37.067136,,
@@ -94,9 +96,9 @@
 091_ida,8,"Av. João Bebe Água, 1101",,,desativada,,,,,,,nao_existe_na_rota_real
 091_ida,9,Av. João Bebe Água 985,arestas manuais,manual,ordem_na_rua,bs_091i_09,97047810#4_0,90.0,-10.922942,-37.105032,,
 091_ida,10,Rua I 102,Rua F Rua I; Rua G Rua I,exato,ordem_na_rua,bs_091i_10,760444349#3_0,10.0,-10.932604,-37.108773,,
-091_ida,11,Rua Joaquim De Barros 223a,arestas manuais,manual,ordem_na_rua,bs_091i_11,170003897_0,10.0,-10.933227,-37.106866,,
-091_ida,12,Rua Saneamento 94,Avenida Saneamento; Avenida Saneamento Rua Major Teles de Menezes,tipo_diferente,so_por_ordem,bs_091i_12,170003897_0,42.0,-10.933516,-37.106862,,rua_fora_da_rota
-091_ida,13,Rua J 7,Avenida Leste Rua J; RUA I_RESIDENCIAL UNIVERSITÁRIO RUA J (RESIDENCCIAL UNIVERSITÁRIO),exato,so_por_ordem,bs_091i_13,170003897_0,74.0,-10.933805,-37.106859,,rua_fora_da_rota
+091_ida,11,Rua Joaquim De Barros 223a,arestas manuais,manual,ordem_na_rua,bs_091i_11,170003897_0,114.0,-10.934167,-37.106855,,
+091_ida,12,Rua Saneamento 94,Avenida Saneamento; Avenida Saneamento Rua Major Teles de Menezes,tipo_diferente,so_por_ordem,bs_091i_12,170003785#0_0,162.0,-10.93363,-37.104192,,rua_fora_da_rota
+091_ida,13,Rua J 7,Avenida Leste Rua J; RUA I_RESIDENCIAL UNIVERSITÁRIO RUA J (RESIDENCCIAL UNIVERSITÁRIO),exato,so_por_ordem,bs_091i_13,957885457#7_0,154.0,-10.935998,-37.097224,,rua_fora_da_rota
 091_ida,14,Rua Jasiel De Brito Côrtes 847,Rua Jasiel de Brito Cortês,exato,ordem_na_rua,bs_091i_14,170010815#3_0,10.0,-10.934706,-37.092159,,
 091_ida,15,Rua Jasiel De Brito Côrtes 715,Rua Jasiel de Brito Cortês,exato,ordem_na_rua,bs_091i_15,84262649#3_0,10.0,-10.935619,-37.089577,,
 091_ida,16,"Rua Jasiel De Brito Côrtes, 80",Rua Jasiel de Brito Cortês,exato,ordem_na_rua,bs_091i_16,84262649#6_0,154.0,-10.938657,-37.089401,,
@@ -112,6 +114,7 @@
 091_ida,26,Rua Moizete Leite Mendonça,Rua Moizete Leite Mendonça,exato,ordem_na_rua,bs_091i_26,80612658_0,50.0,-10.94156,-37.079386,,
 091_ida,27,Av. Pres. Tancredo Neves | Ferreira Costa,Avenida Presidente Tancredo Neves; Avenida PresidenteTancredo Neves,exato,reaproveitada,bs_090i_15,81178606#3_0,74.0,-10.945564,-37.074883,,
 091_ida,28,Terminal De Integração D.I.A (Distrito Industrial De Aracaju),,,terminal,term_dia,291852594#1_0,60.0,-10.948483,-37.074045,,
+091_ida,100,Ponto adicionado 091 ida (aresta 957885457#0),,,adicionada_manual,bs_091i_100,957885457#0_0,26.5,-10.934934,-37.101149,,
 091_volta,1,Terminal De Integração D.I.A (Distrito Industrial De Aracaju),,,terminal,term_dia,291852594#1_0,60.0,-10.948483,-37.074045,,
 091_volta,2,Av. Pres. Tancredo Neves | Praça Anival Dantas,Avenida Presidente Tancredo Neves; Avenida PresidenteTancredo Neves,exato,reaproveitada,bs_090v_02,89717740#0_0,26.0,-10.945991,-37.074193,,
 091_volta,3,"Rua Major João Téles, 88",Rua Major João Teles,exato,ordem_na_rua,bs_091v_03,133437567#3_0,10.0,-10.942287,-37.07938,,
@@ -128,5 +131,5 @@
 091_volta,14,Rua Saneamento 114,Avenida Saneamento; Avenida Saneamento Rua Major Teles de Menezes,tipo_diferente,so_por_ordem,bs_091v_14,-170003785#0_0,10.0,-10.933608,-37.104155,,rua_fora_da_rota
 091_volta,15,Rua I 59,Rua F Rua I; Rua G Rua I,exato,ordem_na_rua,bs_091v_15,-227364200#1_0,106.0,-10.932451,-37.107181,,
 091_volta,16,Av. João Bebe Água 577,arestas manuais,manual,ordem_na_rua,bs_091v_16,97047810#1_0,130.0,-10.927867,-37.106066,,
-091_volta,17,Av. Gov. Marcelo Deda Chagas 195,Avenida Governador Marcelo Déda Chagas; Avenida Governador Marcelo Déda Chagas Avenida Marechal Cândido Mariano da Silva Rondon,exato,ordem_na_rua,bs_091v_17,97047810#1_0,394.0,-10.926231,-37.104914,,
+091_volta,17,Av. Gov. Marcelo Deda Chagas 195,,,removida_manual,,,,,,,removida_da_aresta_97047810#1
 091_volta,18,Terminal De Integração Campus,,,terminal,term_campus,97047810#3_0,60.0,-10.924565,-37.104968,,

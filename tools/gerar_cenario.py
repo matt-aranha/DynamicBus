@@ -893,9 +893,16 @@ def main():
             print(f"  ERRO: não foi possível ordenar as paradas da rota {rid}")
             continue
         relaxadas = set(relaxadas)
+        removidas_manual = []
+        if ov.get("remover_paradas") or ov.get("paradas_extras"):
+            itens, sol, relaxadas, cores_orig, removidas_manual = ajustar_paradas(per, itens, sol, relaxadas, cores_orig, ov, rid)
         if relaxadas:
             print(f"  AVISO: {len(relaxadas)} parada(s) cuja rua não aparece na rota foram posicionadas só por ordem: "
                   + ", ".join(itens[q]["row"]["ordem"] for q in sorted(relaxadas)))
+        for row_rm, edge_rm in removidas_manual:
+            relatorio.append({"rota": rid, "ordem": row_rm["ordem"], "texto": row_rm["texto_original"], "rua_osm": "",
+                              "status_rua": "", "metodo": "removida_manual", "busStop": "", "lane": "", "pos": "",
+                              "lat": "", "lon": "", "dist_geocode_m": "", "avisos": f"removida_da_aresta_{edge_rm}"})
 
         paradas_da_rota = []
         for q, (it, s) in enumerate(zip(itens, sol)):
@@ -934,6 +941,8 @@ def main():
                     reuso[sem_acento(r["texto_original"]).lower().strip()] = sid
                     if vizinha:
                         metodo = "mesclada_com_" + vizinha
+                    elif it.get("extra"):
+                        metodo = "adicionada_manual"
                     elif it["geo_s"] is not None:
                         metodo = "geocode"
                     elif q in relaxadas or not resolvidas.get(r["rua"], {}).get("cores"):
@@ -1002,6 +1011,52 @@ def main():
         metodos[r["metodo"]] += 1
     print("\nMétodo de posicionamento (todas as rotas):", dict(metodos))
     print(f"busStops gerados: {len(paradas_xml)} intermediárias + {len(terminais)} terminais")
+
+
+def ajustar_paradas(per, itens, sol, relaxadas, cores_orig, ov, rid):
+    """Remove paradas que ficaram numa aresta ('remover_paradas') e acrescenta paradas no meio de uma aresta
+    ('paradas_extras'). As demais paradas NÃO mudam de lugar."""
+    n = len(itens)
+    remover, removidas = set(), []
+    for rm in ov.get("remover_paradas", []):
+        edge = rm["edge"]
+        manter = {str(x) for x in ([rm["manter_ordem"]] if "manter_ordem" in rm and not isinstance(rm["manter_ordem"], list)
+                                    else rm.get("manter_ordem", []))}
+        cand = [q for q in range(n) if q not in remover and itens[q]["row"]["tipo"] == "parada"
+                and per.edges[per.s_para_aresta(sol[q])[0]].getID() == edge]
+        alvo = [q for q in cand if itens[q]["row"]["ordem"] not in manter]
+        if not alvo:
+            print(f"  AVISO: {rid}: não há parada para remover na aresta {edge}")
+        for q in alvo:
+            remover.add(q)
+            removidas.append((itens[q]["row"], edge))
+        print(f"  remover_paradas {rid} aresta {edge}: removida(s) {[itens[q]['row']['ordem'] for q in alvo]}"
+              + (f", mantida(s) {[itens[q]['row']['ordem'] for q in cand if q not in alvo]}" if len(cand) > len(alvo) else ""))
+    manter_q = [q for q in range(n) if q not in remover]
+    novos_itens = [itens[q] for q in manter_q]
+    nova_sol = [sol[q] for q in manter_q]
+    nova_relax = {k for k, q in enumerate(manter_q) if q in relaxadas}
+    novos_cores = [cores_orig[q] for q in manter_q]
+    linha, sentido = itens[0]["row"]["linha"], itens[0]["row"]["sentido"]
+    for k, ex in enumerate(ov.get("paradas_extras", [])):
+        idxs = per.idx_por_id.get(ex["edge"])
+        if not idxs:
+            print(f"  ERRO: {rid}: a aresta {ex['edge']} das paradas_extras não está na rota; parada NÃO adicionada.")
+            continue
+        e = per.edges[idxs[0]]
+        s_ex = per.ini[idxs[0]] + e.getLength() / 2
+        pos_ins = sum(1 for v in nova_sol if v <= s_ex)
+        pos_ins = max(1, min(pos_ins, len(nova_sol) - 1))   # nunca antes do início nem depois do fim da rota
+        nome = ex.get("nome") or f"Ponto adicionado {linha} {sentido} (aresta {ex['edge']})"
+        row = {"linha": linha, "sentido": sentido, "ordem": str(100 + k), "tipo": "parada", "terminal_id": "", "rua": "",
+               "numero": "", "referencia": "", "texto_original": nome, "ativa": "sim"}
+        item = {"row": row, "pin": s_ex, "cores": None, "geo_s": None, "geo": None, "reuso": None, "fixa": True, "extra": True}
+        novos_itens.insert(pos_ins, item)
+        nova_sol.insert(pos_ins, s_ex)
+        novos_cores.insert(pos_ins, None)
+        nova_relax = {(j + 1 if j >= pos_ins else j) for j in nova_relax}
+        print(f"  parada extra {rid} na aresta {ex['edge']} (posição {s_ex:.0f} m da rota)")
+    return novos_itens, nova_sol, nova_relax, novos_cores, removidas
 
 
 def montar_pontos(rede, rows, resolvidas, term_aresta, inicio, fim, permitidas, fator_fora, fixas, limite_ancora=20):
