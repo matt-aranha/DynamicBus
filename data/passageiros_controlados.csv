@@ -1,0 +1,21 @@
+# Geração CONTROLADA de passageiros (usada quando GERACAO_CONTROLADA = True em config/settings.py).
+# Colunas: tempo_s, linha, sentido, origem, destino, quantidade
+#   tempo_s   : segundo da simulação em que os passageiros aparecem na parada de origem
+#   linha     : 090, 091 ou 050
+#   sentido   : ida ou volta
+#   origem    : id da parada (term_campus, bs_090i_05, ...) OU o número da parada no itinerário (coluna 'ordem' de data/paradas_linhas.csv)
+#   destino   : idem; precisa vir DEPOIS da origem na rota
+#   quantidade: quantos passageiros iguais surgem de uma vez
+# Linhas iniciadas por # são comentários. Exemplo abaixo: pico da linha 050 a partir dos 20 min.
+tempo_s,linha,sentido,origem,destino,quantidade
+0,090,ida,term_campus,term_dia,30
+0,091,ida,term_campus,term_dia,30
+0,050,ida,term_campus,term_maracaju,30
+600,090,volta,term_dia,term_campus,25
+600,091,volta,term_dia,term_campus,25
+1200,050,ida,term_campus,term_maracaju,80
+1500,050,ida,term_campus,term_maracaju,80
+1800,050,volta,term_maracaju,term_campus,60
+2400,050,ida,term_campus,term_maracaju,80
+3600,090,ida,term_campus,term_zona_oeste,15
+3600,091,ida,term_campus,term_dia,15
