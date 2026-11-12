@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-11-12T01:03:15.879802-03:00 by Eclipse SUMO GUI 1.28.0
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="C:\Users\rocha\OneDrive\Documentos\Projetos\DynamicBus\sumo\net\net_linhas_090_091_050.net.xml"/>
+        <route-files value="C:\Users\rocha\OneDrive\Documentos\Projetos\DynamicBus\sumo\routes\vtypes.rou.xml,C:\Users\rocha\OneDrive\Documentos\Projetos\DynamicBus\sumo\routes\bus_routes.rou.xml"/>
+        <additional-files value="C:\Users\rocha\OneDrive\Documentos\Projetos\DynamicBus\sumo\additional\busstops_linhas.add.xml"/>
+    </input>
+
+    <output>
+        <tripinfo-output value="C:\Users\rocha\OneDrive\Documentos\Projetos\DynamicBus\results\_tripinfo_tmp_5672.xml"/>
+    </output>
+
+    <time>
+        <step-length value="1.0"/>
+    </time>
+
+    <processing>
+        <time-to-teleport value="-1"/>
+    </processing>
+
+    <report>
+        <no-warnings value="true"/>
+        <duration-log.disable value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+    <traci_server>
+        <remote-port value="63189"/>
+    </traci_server>
+
+    <random_number>
+        <seed value="43"/>
+    </random_number>
+
+    <gui_only>
+        <start value="true"/>
+        <delay value="30"/>
+    </gui_only>
+
+</sumoConfiguration>
+-->
+
+<tripinfos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/tripinfo_file.xsd">
+</tripinfos>
